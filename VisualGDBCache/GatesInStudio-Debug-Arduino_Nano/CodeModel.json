@@ -56,60 +56,6 @@
             },
             {
                 "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-gcc",
-                "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\hooks.c",
-                "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\hooks.c.o",
-                "Arguments": [
-                    "-c",
-                    "-g",
-                    "-Os",
-                    "-w",
-                    "-std=gnu11",
-                    "-ffunction-sections",
-                    "-fdata-sections",
-                    "-MMD",
-                    "-flto",
-                    "-fno-fat-lto-objects",
-                    "-mmcu=atmega328p",
-                    "-DF_CPU=16000000L",
-                    "-DARDUINO=10600",
-                    "-DARDUINO_AVR_NANO",
-                    "-DARDUINO_ARCH_AVR",
-                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino",
-                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\variants\\eightanaloginputs",
-                    "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\hooks.c",
-                    "-o",
-                    "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\hooks.c.o"
-                ]
-            },
-            {
-                "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-gcc",
-                "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\wiring.c",
-                "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\wiring.c.o",
-                "Arguments": [
-                    "-c",
-                    "-g",
-                    "-Os",
-                    "-w",
-                    "-std=gnu11",
-                    "-ffunction-sections",
-                    "-fdata-sections",
-                    "-MMD",
-                    "-flto",
-                    "-fno-fat-lto-objects",
-                    "-mmcu=atmega328p",
-                    "-DF_CPU=16000000L",
-                    "-DARDUINO=10600",
-                    "-DARDUINO_AVR_NANO",
-                    "-DARDUINO_ARCH_AVR",
-                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino",
-                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\variants\\eightanaloginputs",
-                    "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\wiring.c",
-                    "-o",
-                    "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\wiring.c.o"
-                ]
-            },
-            {
-                "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-gcc",
                 "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\wiring_digital.c",
                 "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\wiring_digital.c.o",
                 "Arguments": [
@@ -164,6 +110,33 @@
             },
             {
                 "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-gcc",
+                "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\wiring_shift.c",
+                "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\wiring_shift.c.o",
+                "Arguments": [
+                    "-c",
+                    "-g",
+                    "-Os",
+                    "-w",
+                    "-std=gnu11",
+                    "-ffunction-sections",
+                    "-fdata-sections",
+                    "-MMD",
+                    "-flto",
+                    "-fno-fat-lto-objects",
+                    "-mmcu=atmega328p",
+                    "-DF_CPU=16000000L",
+                    "-DARDUINO=10600",
+                    "-DARDUINO_AVR_NANO",
+                    "-DARDUINO_ARCH_AVR",
+                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino",
+                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\variants\\eightanaloginputs",
+                    "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\wiring_shift.c",
+                    "-o",
+                    "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\wiring_shift.c.o"
+                ]
+            },
+            {
+                "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-gcc",
                 "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\wiring_analog.c",
                 "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\wiring_analog.c.o",
                 "Arguments": [
@@ -191,8 +164,8 @@
             },
             {
                 "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-gcc",
-                "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\wiring_shift.c",
-                "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\wiring_shift.c.o",
+                "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\wiring.c",
+                "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\wiring.c.o",
                 "Arguments": [
                     "-c",
                     "-g",
@@ -211,9 +184,36 @@
                     "-DARDUINO_ARCH_AVR",
                     "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino",
                     "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\variants\\eightanaloginputs",
-                    "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\wiring_shift.c",
+                    "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\wiring.c",
                     "-o",
-                    "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\wiring_shift.c.o"
+                    "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\wiring.c.o"
+                ]
+            },
+            {
+                "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-gcc",
+                "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\hooks.c",
+                "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\hooks.c.o",
+                "Arguments": [
+                    "-c",
+                    "-g",
+                    "-Os",
+                    "-w",
+                    "-std=gnu11",
+                    "-ffunction-sections",
+                    "-fdata-sections",
+                    "-MMD",
+                    "-flto",
+                    "-fno-fat-lto-objects",
+                    "-mmcu=atmega328p",
+                    "-DF_CPU=16000000L",
+                    "-DARDUINO=10600",
+                    "-DARDUINO_AVR_NANO",
+                    "-DARDUINO_ARCH_AVR",
+                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino",
+                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\variants\\eightanaloginputs",
+                    "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\hooks.c",
+                    "-o",
+                    "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\hooks.c.o"
                 ]
             },
             {
@@ -338,36 +338,6 @@
             },
             {
                 "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-g++",
-                "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\Tone.cpp",
-                "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\Tone.cpp.o",
-                "Arguments": [
-                    "-c",
-                    "-g",
-                    "-Os",
-                    "-w",
-                    "-std=gnu++11",
-                    "-fpermissive",
-                    "-fno-exceptions",
-                    "-ffunction-sections",
-                    "-fdata-sections",
-                    "-fno-threadsafe-statics",
-                    "-Wno-error=narrowing",
-                    "-MMD",
-                    "-flto",
-                    "-mmcu=atmega328p",
-                    "-DF_CPU=16000000L",
-                    "-DARDUINO=10600",
-                    "-DARDUINO_AVR_NANO",
-                    "-DARDUINO_ARCH_AVR",
-                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino",
-                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\variants\\eightanaloginputs",
-                    "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\Tone.cpp",
-                    "-o",
-                    "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\Tone.cpp.o"
-                ]
-            },
-            {
-                "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-g++",
                 "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\HardwareSerial2.cpp",
                 "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\HardwareSerial2.cpp.o",
                 "Arguments": [
@@ -424,36 +394,6 @@
                     "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\HardwareSerial3.cpp",
                     "-o",
                     "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\HardwareSerial3.cpp.o"
-                ]
-            },
-            {
-                "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-g++",
-                "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\IPAddress.cpp",
-                "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\IPAddress.cpp.o",
-                "Arguments": [
-                    "-c",
-                    "-g",
-                    "-Os",
-                    "-w",
-                    "-std=gnu++11",
-                    "-fpermissive",
-                    "-fno-exceptions",
-                    "-ffunction-sections",
-                    "-fdata-sections",
-                    "-fno-threadsafe-statics",
-                    "-Wno-error=narrowing",
-                    "-MMD",
-                    "-flto",
-                    "-mmcu=atmega328p",
-                    "-DF_CPU=16000000L",
-                    "-DARDUINO=10600",
-                    "-DARDUINO_AVR_NANO",
-                    "-DARDUINO_ARCH_AVR",
-                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino",
-                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\variants\\eightanaloginputs",
-                    "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\IPAddress.cpp",
-                    "-o",
-                    "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\IPAddress.cpp.o"
                 ]
             },
             {
@@ -518,6 +458,36 @@
             },
             {
                 "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-g++",
+                "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\IPAddress.cpp",
+                "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\IPAddress.cpp.o",
+                "Arguments": [
+                    "-c",
+                    "-g",
+                    "-Os",
+                    "-w",
+                    "-std=gnu++11",
+                    "-fpermissive",
+                    "-fno-exceptions",
+                    "-ffunction-sections",
+                    "-fdata-sections",
+                    "-fno-threadsafe-statics",
+                    "-Wno-error=narrowing",
+                    "-MMD",
+                    "-flto",
+                    "-mmcu=atmega328p",
+                    "-DF_CPU=16000000L",
+                    "-DARDUINO=10600",
+                    "-DARDUINO_AVR_NANO",
+                    "-DARDUINO_ARCH_AVR",
+                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino",
+                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\variants\\eightanaloginputs",
+                    "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\IPAddress.cpp",
+                    "-o",
+                    "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\IPAddress.cpp.o"
+                ]
+            },
+            {
+                "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-g++",
                 "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\PluggableUSB.cpp",
                 "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\PluggableUSB.cpp.o",
                 "Arguments": [
@@ -574,36 +544,6 @@
                     "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\WString.cpp",
                     "-o",
                     "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\WString.cpp.o"
-                ]
-            },
-            {
-                "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-g++",
-                "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\abi.cpp",
-                "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\abi.cpp.o",
-                "Arguments": [
-                    "-c",
-                    "-g",
-                    "-Os",
-                    "-w",
-                    "-std=gnu++11",
-                    "-fpermissive",
-                    "-fno-exceptions",
-                    "-ffunction-sections",
-                    "-fdata-sections",
-                    "-fno-threadsafe-statics",
-                    "-Wno-error=narrowing",
-                    "-MMD",
-                    "-flto",
-                    "-mmcu=atmega328p",
-                    "-DF_CPU=16000000L",
-                    "-DARDUINO=10600",
-                    "-DARDUINO_AVR_NANO",
-                    "-DARDUINO_ARCH_AVR",
-                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino",
-                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\variants\\eightanaloginputs",
-                    "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\abi.cpp",
-                    "-o",
-                    "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\abi.cpp.o"
                 ]
             },
             {
@@ -698,6 +638,36 @@
             },
             {
                 "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-g++",
+                "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\Tone.cpp",
+                "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\Tone.cpp.o",
+                "Arguments": [
+                    "-c",
+                    "-g",
+                    "-Os",
+                    "-w",
+                    "-std=gnu++11",
+                    "-fpermissive",
+                    "-fno-exceptions",
+                    "-ffunction-sections",
+                    "-fdata-sections",
+                    "-fno-threadsafe-statics",
+                    "-Wno-error=narrowing",
+                    "-MMD",
+                    "-flto",
+                    "-mmcu=atmega328p",
+                    "-DF_CPU=16000000L",
+                    "-DARDUINO=10600",
+                    "-DARDUINO_AVR_NANO",
+                    "-DARDUINO_ARCH_AVR",
+                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino",
+                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\variants\\eightanaloginputs",
+                    "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\Tone.cpp",
+                    "-o",
+                    "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\Tone.cpp.o"
+                ]
+            },
+            {
+                "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-g++",
                 "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\new.cpp",
                 "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\new.cpp.o",
                 "Arguments": [
@@ -724,6 +694,36 @@
                     "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\new.cpp",
                     "-o",
                     "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\new.cpp.o"
+                ]
+            },
+            {
+                "GCC": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-g++",
+                "InputFile": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\abi.cpp",
+                "ObjectFile": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\abi.cpp.o",
+                "Arguments": [
+                    "-c",
+                    "-g",
+                    "-Os",
+                    "-w",
+                    "-std=gnu++11",
+                    "-fpermissive",
+                    "-fno-exceptions",
+                    "-ffunction-sections",
+                    "-fdata-sections",
+                    "-fno-threadsafe-statics",
+                    "-Wno-error=narrowing",
+                    "-MMD",
+                    "-flto",
+                    "-mmcu=atmega328p",
+                    "-DF_CPU=16000000L",
+                    "-DARDUINO=10600",
+                    "-DARDUINO_AVR_NANO",
+                    "-DARDUINO_ARCH_AVR",
+                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino",
+                    "-IC:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\variants\\eightanaloginputs",
+                    "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino\\abi.cpp",
+                    "-o",
+                    "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\\core\\abi.cpp.o"
                 ]
             }
         ]
@@ -767,79 +767,49 @@
     "Libraries": null,
     "KnownHeaders": [
         {
-            "Name": "WiFiUdp.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\WiFi\\src"
-            ]
-        },
-        {
-            "Name": "BridgeClient.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
-            ]
-        },
-        {
-            "Name": "YunServer.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
-            ]
-        },
-        {
-            "Name": "Firmata.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Firmata"
-            ]
-        },
-        {
-            "Name": "FirmataParser.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Firmata"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1BaseProvider.h",
+            "Name": "GSM3MobileDataNetworkProvider.h",
             "LibraryDirectories": [
                 "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
             ]
         },
         {
-            "Name": "GSM3SoftSerial.h",
+            "Name": "ArduinoRobot.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
+            ]
+        },
+        {
+            "Name": "SPI.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\SPI\\src"
+            ]
+        },
+        {
+            "Name": "GSM3MobileServerService.h",
             "LibraryDirectories": [
                 "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
             ]
         },
         {
-            "Name": "WiFiServer.h",
+            "Name": "TembooYunShield.h",
             "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\WiFi\\src"
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Temboo\\src"
             ]
         },
         {
-            "Name": "SoftwareSerial.h",
+            "Name": "Time.h",
             "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\SoftwareSerial\\src"
+                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Time"
             ]
         },
         {
-            "Name": "BridgeUdp.h",
+            "Name": "FileIO.h",
             "LibraryDirectories": [
                 "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
             ]
         },
         {
-            "Name": "OLED_SH1106.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\OLED_SH1106"
-            ]
-        },
-        {
-            "Name": "Stepper.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Stepper\\src"
-            ]
-        },
-        {
-            "Name": "TembooMQTTEdgeDevice.h",
+            "Name": "TembooCoAPEdgeDevice.h",
             "LibraryDirectories": [
                 "C:\\Program Files (x86)\\Arduino\\libraries\\Temboo\\src"
             ]
@@ -851,7 +821,206 @@
             ]
         },
         {
-            "Name": "GSM3SMSService.h",
+            "Name": "HID.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\HID\\src"
+            ]
+        },
+        {
+            "Name": "BridgeServer.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
+            ]
+        },
+        {
+            "Name": "Process.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
+            ]
+        },
+        {
+            "Name": "Adafruit_SPITFT.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Adafruit_GFX_Library"
+            ]
+        },
+        {
+            "Name": "HttpClient.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
+            ]
+        },
+        {
+            "Name": "GSM3MobileClientProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "GSM3MobileClientService.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "GSM3MobileSMSProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "SdInfo.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
+            ]
+        },
+        {
+            "Name": "iarduino_OLED_I2C.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED-master\\src"
+            ]
+        },
+        {
+            "Name": "ArduinoRobotMotorBoard.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Motor\\src"
+            ]
+        },
+        {
+            "Name": "Fat16Config.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
+            ]
+        },
+        {
+            "Name": "FatStructs.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
+            ]
+        },
+        {
+            "Name": "Dns.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Ethernet\\src"
+            ]
+        },
+        {
+            "Name": "Mailbox.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
+            ]
+        },
+        {
+            "Name": "Adafruit_SPITFT_Macros.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Adafruit_GFX_Library"
+            ]
+        },
+        {
+            "Name": "OneWire.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\OneWire"
+            ]
+        },
+        {
+            "Name": "DS3231.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\DS3231"
+            ]
+        },
+        {
+            "Name": "GSM3MobileVoiceProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "GSM3ShieldV1ClientProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "GSM3ShieldV1VoiceProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "GSM3SoftSerial.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "EasyTransfer2.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src",
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Motor\\src"
+            ]
+        },
+        {
+            "Name": "SdCard.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
+            ]
+        },
+        {
+            "Name": "FirmataDefines.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Firmata"
+            ]
+        },
+        {
+            "Name": "GSM3ShieldV1.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "TimeLib.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Time"
+            ]
+        },
+        {
+            "Name": "GSM3ShieldV1DirectModemProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "GSM3ShieldV1ModemCore.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "Keyboard.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Keyboard\\src"
+            ]
+        },
+        {
+            "Name": "Fat16mainpage.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
+            ]
+        },
+        {
+            "Name": "iarduino_OLED.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED-master\\src"
+            ]
+        },
+        {
+            "Name": "FirmataParser.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Firmata"
+            ]
+        },
+        {
+            "Name": "GSM3ShieldV1ModemVerification.h",
             "LibraryDirectories": [
                 "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
             ]
@@ -863,45 +1032,208 @@
             ]
         },
         {
+            "Name": "Multiplexer.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src",
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Motor\\src"
+            ]
+        },
+        {
+            "Name": "WiFiServer.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\WiFi\\src"
+            ]
+        },
+        {
             "Name": "Adafruit_GFX.h",
             "LibraryDirectories": [
                 "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Adafruit_GFX_Library"
             ]
         },
         {
-            "Name": "FirmataConstants.h",
+            "Name": "Adafruit_CircuitPlayground.h",
             "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Firmata"
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Adafruit_Circuit_Playground"
             ]
         },
         {
-            "Name": "SpacebrewYun.h",
+            "Name": "GSM3MobileCellManagement.h",
             "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\SpacebrewYun\\src"
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
             ]
         },
         {
-            "Name": "WiFiClient.h",
+            "Name": "Adafruit_Circuit_Playground.h",
             "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\WiFi\\src"
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Adafruit_Circuit_Playground"
             ]
         },
         {
-            "Name": "YunClient.h",
+            "Name": "DS1307RTC.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\DS1307RTC"
+            ]
+        },
+        {
+            "Name": "GSM3MobileAccessProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "SoftwareSerial.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\SoftwareSerial\\src"
+            ]
+        },
+        {
+            "Name": "gfxfont.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Adafruit_GFX_Library"
+            ]
+        },
+        {
+            "Name": "GSM3ShieldV1ScanNetworks.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "RobotIRremote.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\RobotIRremote\\src"
+            ]
+        },
+        {
+            "Name": "RobotIRremoteInt.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\RobotIRremote\\src"
+            ]
+        },
+        {
+            "Name": "Compass.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
+            ]
+        },
+        {
+            "Name": "TFT.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\TFT\\src"
+            ]
+        },
+        {
+            "Name": "Bridge.h",
             "LibraryDirectories": [
                 "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
             ]
         },
         {
-            "Name": "Mouse.h",
+            "Name": "Dhcp.h",
             "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Mouse\\src"
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Ethernet\\src"
             ]
         },
         {
-            "Name": "Fat16mainpage.h",
+            "Name": "GSM3ShieldV1PinManagement.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "Fat16.h",
             "LibraryDirectories": [
                 "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
+            ]
+        },
+        {
+            "Name": "EEPROM.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\EEPROM\\src"
+            ]
+        },
+        {
+            "Name": "WiFiUdp.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\WiFi\\src"
+            ]
+        },
+        {
+            "Name": "GSM3IO.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "GSM3ShieldV1MultiClientProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "Servo.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Servo\\src"
+            ]
+        },
+        {
+            "Name": "TembooMQTTEdgeDevice.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Temboo\\src"
+            ]
+        },
+        {
+            "Name": "EthernetClient.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Ethernet\\src"
+            ]
+        },
+        {
+            "Name": "Boards.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Firmata"
+            ]
+        },
+        {
+            "Name": "GSM3ShieldV1DataNetworkProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "Fat16util.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
+            ]
+        },
+        {
+            "Name": "EthernetServer.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Ethernet\\src"
+            ]
+        },
+        {
+            "Name": "Firmata.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Firmata"
+            ]
+        },
+        {
+            "Name": "GSM.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "iarduino_OLED_txt_I2C.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED_txt-master\\src"
+            ]
+        },
+        {
+            "Name": "GSM3CircularBuffer.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
             ]
         },
         {
@@ -911,13 +1243,115 @@
             ]
         },
         {
-            "Name": "BridgeServer.h",
+            "Name": "Esplora.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Esplora\\src"
+            ]
+        },
+        {
+            "Name": "GSM3MobileMockupProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "GSM3MobileNetworkProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "SpacebrewYun.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\SpacebrewYun\\src"
+            ]
+        },
+        {
+            "Name": "GSM3ShieldV1AccessProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "GSM3VoiceCallService.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "Mouse.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Mouse\\src"
+            ]
+        },
+        {
+            "Name": "LineFollow.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Motor\\src"
+            ]
+        },
+        {
+            "Name": "YunServer.h",
             "LibraryDirectories": [
                 "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
             ]
         },
         {
-            "Name": "Mailbox.h",
+            "Name": "GSM3ShieldV1BandManagement.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "GSM3ShieldV1BaseProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "Temboo.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Temboo\\src"
+            ]
+        },
+        {
+            "Name": "GSM3MobileNetworkRegistry.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "GSM3SMSService.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "SD.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\SD\\src"
+            ]
+        },
+        {
+            "Name": "TembooMonitoring.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Temboo\\src"
+            ]
+        },
+        {
+            "Name": "GyverEncoder.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\GyverEncoder"
+            ]
+        },
+        {
+            "Name": "Console.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
+            ]
+        },
+        {
+            "Name": "YunClient.h",
             "LibraryDirectories": [
                 "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
             ]
@@ -935,513 +1369,7 @@
             ]
         },
         {
-            "Name": "Fat16Config.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
-            ]
-        },
-        {
-            "Name": "FileIO.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
-            ]
-        },
-        {
-            "Name": "GSM3MobileSMSProvider.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "TembooMonitoring.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Temboo\\src"
-            ]
-        },
-        {
-            "Name": "iarduino_OLED.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED-master\\src"
-            ]
-        },
-        {
-            "Name": "Esplora.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Esplora\\src"
-            ]
-        },
-        {
-            "Name": "Wire.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\Wire\\src"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1PinManagement.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "SD.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\SD\\src"
-            ]
-        },
-        {
-            "Name": "Servo.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Servo\\src"
-            ]
-        },
-        {
-            "Name": "Multiplexer.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src",
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Motor\\src"
-            ]
-        },
-        {
-            "Name": "SdInfo.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1DataNetworkProvider.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "GSM3VoiceCallService.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "gfxfont.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Adafruit_GFX_Library"
-            ]
-        },
-        {
-            "Name": "BridgeSSLClient.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1ServerProvider.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "Arduino_LCD.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
-            ]
-        },
-        {
-            "Name": "LineFollow.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Motor\\src"
-            ]
-        },
-        {
-            "Name": "GSM3MobileMockupProvider.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1ScanNetworks.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "Adafruit_SPITFT.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Adafruit_GFX_Library"
-            ]
-        },
-        {
-            "Name": "DS1307RTC.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\DS1307RTC"
-            ]
-        },
-        {
-            "Name": "GSM3CircularBuffer.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "GSM3MobileCellManagement.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "Adafruit_SPITFT_Macros.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Adafruit_GFX_Library"
-            ]
-        },
-        {
-            "Name": "Adafruit_CircuitPlayground.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Adafruit_Circuit_Playground"
-            ]
-        },
-        {
-            "Name": "GSM3MobileServerService.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "Keyboard.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Keyboard\\src"
-            ]
-        },
-        {
-            "Name": "Squawk.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
-            ]
-        },
-        {
-            "Name": "GyverEncoder.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\GyverEncoder"
-            ]
-        },
-        {
-            "Name": "Time.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Time"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1ModemCore.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "ArduinoRobot.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
-            ]
-        },
-        {
-            "Name": "EthernetServer.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Ethernet\\src"
-            ]
-        },
-        {
-            "Name": "GSM3MobileClientService.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "GSM3MobileVoiceProvider.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "Bridge.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
-            ]
-        },
-        {
-            "Name": "Fat16.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
-            ]
-        },
-        {
-            "Name": "EEPROM.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\EEPROM\\src"
-            ]
-        },
-        {
-            "Name": "iarduino_OLED_txt.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED_txt-master\\src"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1MultiServerProvider.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "Fat16util.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
-            ]
-        },
-        {
-            "Name": "GSM3MobileClientProvider.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "RobotIRremoteTools.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\RobotIRremote\\src"
-            ]
-        },
-        {
-            "Name": "EasyTransfer2.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src",
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Motor\\src"
-            ]
-        },
-        {
-            "Name": "TFT.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\TFT\\src"
-            ]
-        },
-        {
-            "Name": "SPI.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\SPI\\src"
-            ]
-        },
-        {
-            "Name": "DS3231.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\DS3231"
-            ]
-        },
-        {
-            "Name": "EthernetClient.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Ethernet\\src"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1AccessProvider.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1BandManagement.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1MultiClientProvider.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
             "Name": "GSM3ShieldV1SMSProvider.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "RobotIRremoteInt.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\RobotIRremote\\src"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1ModemVerification.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "SquawkSD.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
-            ]
-        },
-        {
-            "Name": "ArduinoRobotMotorBoard.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Motor\\src"
-            ]
-        },
-        {
-            "Name": "TembooCoAPEdgeDevice.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Temboo\\src"
-            ]
-        },
-        {
-            "Name": "TimeLib.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Time"
-            ]
-        },
-        {
-            "Name": "Console.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
-            ]
-        },
-        {
-            "Name": "Process.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
-            ]
-        },
-        {
-            "Name": "FirmataDefines.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Firmata"
-            ]
-        },
-        {
-            "Name": "FirmataMarshaller.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Firmata"
-            ]
-        },
-        {
-            "Name": "GSM3MobileDataNetworkProvider.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1ClientProvider.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "HttpClient.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
-            ]
-        },
-        {
-            "Name": "Dhcp.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Ethernet\\src"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1VoiceProvider.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "RobotIRremote.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\RobotIRremote\\src"
-            ]
-        },
-        {
-            "Name": "Temboo.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Temboo\\src"
-            ]
-        },
-        {
-            "Name": "TembooYunShield.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Temboo\\src"
-            ]
-        },
-        {
-            "Name": "Dns.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Ethernet\\src"
-            ]
-        },
-        {
-            "Name": "GSM3IO.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "GSM3MobileNetworkRegistry.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1DirectModemProvider.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "Compass.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
-            ]
-        },
-        {
-            "Name": "Ethernet.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Ethernet\\src"
-            ]
-        },
-        {
-            "Name": "GSM.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "GSM3ShieldV1CellManagement.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
-            ]
-        },
-        {
-            "Name": "iarduino_OLED_I2C.h",
-            "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED-master\\src"
-            ]
-        },
-        {
-            "Name": "Adafruit_Circuit_Playground.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Adafruit_Circuit_Playground"
-            ]
-        },
-        {
-            "Name": "Boards.h",
-            "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Firmata"
-            ]
-        },
-        {
-            "Name": "GSM3MobileNetworkProvider.h",
             "LibraryDirectories": [
                 "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
             ]
@@ -1453,39 +1381,111 @@
             ]
         },
         {
-            "Name": "FatStructs.h",
+            "Name": "OLED_SH1106.h",
             "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
+                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\OLED_SH1106"
             ]
         },
         {
-            "Name": "OneWire.h",
+            "Name": "BridgeClient.h",
             "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\OneWire"
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
             ]
         },
         {
-            "Name": "SdCard.h",
+            "Name": "BridgeSSLClient.h",
             "LibraryDirectories": [
-                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
             ]
         },
         {
-            "Name": "iarduino_OLED_txt_I2C.h",
+            "Name": "Ethernet.h",
             "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED_txt-master\\src"
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Ethernet\\src"
             ]
         },
         {
-            "Name": "GSM3MobileAccessProvider.h",
+            "Name": "GSM3ShieldV1CellManagement.h",
             "LibraryDirectories": [
                 "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
             ]
         },
         {
-            "Name": "HID.h",
+            "Name": "Arduino_LCD.h",
             "LibraryDirectories": [
-                "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\HID\\src"
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
+            ]
+        },
+        {
+            "Name": "FirmataConstants.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Firmata"
+            ]
+        },
+        {
+            "Name": "GSM3ShieldV1MultiServerProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "Squawk.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
+            ]
+        },
+        {
+            "Name": "SquawkSD.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src"
+            ]
+        },
+        {
+            "Name": "Stepper.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Stepper\\src"
+            ]
+        },
+        {
+            "Name": "Wire.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\Wire\\src"
+            ]
+        },
+        {
+            "Name": "BridgeUdp.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src"
+            ]
+        },
+        {
+            "Name": "FirmataMarshaller.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\Firmata"
+            ]
+        },
+        {
+            "Name": "GSM3ShieldV1ServerProvider.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src"
+            ]
+        },
+        {
+            "Name": "RobotIRremoteTools.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\RobotIRremote\\src"
+            ]
+        },
+        {
+            "Name": "WiFiClient.h",
+            "LibraryDirectories": [
+                "C:\\Program Files (x86)\\Arduino\\libraries\\WiFi\\src"
+            ]
+        },
+        {
+            "Name": "iarduino_OLED_txt.h",
+            "LibraryDirectories": [
+                "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED_txt-master\\src"
             ]
         }
     ],
@@ -1493,72 +1493,164 @@
         {
             "FunctionName": "Timer1DisEnable",
             "File": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\sketches\\Gates.ino",
-            "Prototype": "void Timer1DisEnable(byte ON1_OFF0, unsigned long PeriodMilis = 1000);",
+            "Prototype": "void Timer1DisEnable(byte ON1_OFF0, unsigned long PeriodMilis );",
             "Modifiers": "",
-            "Line": 39
+            "Line": 41
         },
         {
             "FunctionName": "setup",
             "File": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\sketches\\Gates.ino",
             "Prototype": "void setup();",
             "Modifiers": "",
-            "Line": 64
+            "Line": 66
+        },
+        {
+            "FunctionName": "RaspRej",
+            "File": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\sketches\\Gates.ino",
+            "Prototype": "void RaspRej();",
+            "Modifiers": "",
+            "Line": 79
         },
         {
             "FunctionName": "int0",
             "File": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\sketches\\Gates.ino",
             "Prototype": "void int0();",
             "Modifiers": "",
-            "Line": 75
+            "Line": 106
         },
         {
             "FunctionName": "RassvetZakat",
             "File": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\sketches\\Gates.ino",
             "Prototype": "void RassvetZakat();",
             "Modifiers": "",
-            "Line": 92
+            "Line": 128
         },
         {
             "FunctionName": "loop",
             "File": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\sketches\\Gates.ino",
             "Prototype": "void loop();",
             "Modifiers": "",
-            "Line": 122
+            "Line": 158
         }
     ],
     "KnownLibraries": [
         {
-            "Folder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\EEPROM",
-            "SrcFolder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\EEPROM\\src",
+            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\WiFi",
+            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\WiFi\\src",
             "UtilityFolder": "",
             "Layout": 2,
-            "Name": "EEPROM",
-            "RealName": "EEPROM",
+            "Name": "WiFi",
+            "RealName": "WiFi",
             "IsLegacy": false,
-            "Version": "2.0",
-            "Author": "Arduino, Christopher Andrews",
+            "Version": "1.2.7",
+            "Author": "Arduino",
             "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Enables reading and writing to the permanent board storage.",
-            "Paragraph": "This library allows to read and write data in a memory type, the EEPROM, that keeps its content also when the board is powered off. The amount of EEPROM available depends on the microcontroller type.",
-            "URL": "http://www.arduino.cc/en/Reference/EEPROM",
-            "Category": "Data Storage",
+            "Sentence": "Enables network connection (local and Internet) using the Arduino WiFi shield.",
+            "Paragraph": "With this library you can instantiate Servers, Clients and send/receive UDP packets through WiFi. The shield can connect either to open or encrypted networks (WEP, WPA). The IP address can be assigned statically or through a DHCP. The library can also manage DNS.",
+            "URL": "http://www.arduino.cc/en/Reference/WiFi",
+            "Category": "Communication",
             "License": "Unspecified"
         },
         {
-            "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\DS3231",
-            "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\DS3231",
+            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\RobotIRremote",
+            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\RobotIRremote\\src",
+            "UtilityFolder": "",
+            "Layout": 2,
+            "Name": "RobotIRremote",
+            "RealName": "Robot IR Remote",
+            "IsLegacy": false,
+            "Version": "2.0.0",
+            "Author": "Arduino",
+            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
+            "Sentence": "Allows controlling the Arduino Robot via an IR remote control. For Arduino Robot only.",
+            "Paragraph": "-",
+            "URL": "https://github.com/arduino-libraries/RobotIRremote",
+            "Category": "Device Control",
+            "License": "Unspecified"
+        },
+        {
+            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\TFT",
+            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\TFT\\src",
+            "UtilityFolder": "",
+            "Layout": 2,
+            "Name": "TFT",
+            "RealName": "TFT",
+            "IsLegacy": false,
+            "Version": "1.0.6",
+            "Author": "Arduino, Adafruit",
+            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
+            "Sentence": "Allows drawing text, images, and shapes on the Arduino TFT graphical display.",
+            "Paragraph": "This library is compatible with most of the TFT display based on the ST7735 chipset.",
+            "URL": "http://www.arduino.cc/en/Reference/TFTLibrary",
+            "Category": "Display",
+            "License": "Unspecified"
+        },
+        {
+            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Servo",
+            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Servo\\src",
+            "UtilityFolder": "",
+            "Layout": 2,
+            "Name": "Servo",
+            "RealName": "Servo",
+            "IsLegacy": false,
+            "Version": "1.1.3",
+            "Author": "Michael Margolis, Arduino",
+            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
+            "Sentence": "Allows Arduino/Genuino boards to control a variety of servo motors.",
+            "Paragraph": "This library can control a great number of servos.\u003cbr /\u003eIt makes careful use of timers: the library can control 12 servos using only 1 timer.\u003cbr /\u003eOn the Arduino Due you can control up to 60 servos.\u003cbr /\u003e",
+            "URL": "http://www.arduino.cc/en/Reference/Servo",
+            "Category": "Device Control",
+            "License": "Unspecified"
+        },
+        {
+            "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\OneWire",
+            "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\OneWire",
             "UtilityFolder": "",
             "Layout": 1,
-            "Name": "DS3231",
-            "RealName": "DS3231",
+            "Name": "OneWire",
+            "RealName": "OneWire",
             "IsLegacy": false,
-            "Version": "1.0.2",
-            "Author": "Andrew Wickert \u003cawickert@umn.edu\u003e, Eric Ayars, Jean-Claude Wippler, Northern Widget LLC \u003cinfo@northernwidget.com\u003e",
-            "Maintainer": "Andrew Wickert \u003cawickert@umn.edu\u003e",
-            "Sentence": "Arduino library for the DS3231 real-time clock (RTC)",
-            "Paragraph": "Abstracts functionality for clock reading, clock setting, and alarms for the DS3231 high-precision real-time clock. This is a splice of Ayars' (http://hacks.ayars.org/2011/04/ds3231-real-time-clock.html) and Jeelabs/Ladyada's (https://github.com/adafruit/RTClib) libraries.",
-            "URL": "https://github.com/NorthernWidget/DS3231",
+            "Version": "2.3.4",
+            "Author": "Jim Studt, Tom Pollard, Robin James, Glenn Trewitt, Jason Dangel, Guillermo Lovato, Paul Stoffregen, Scott Roberts, Bertrik Sikken, Mark Tillotson, Ken Butcher, Roger Clark, Love Nystrom",
+            "Maintainer": "Paul Stoffregen",
+            "Sentence": "Access 1-wire temperature sensors, memory and other chips.",
+            "Paragraph": "-",
+            "URL": "http://www.pjrc.com/teensy/td_libs_OneWire.html",
+            "Category": "Communication",
+            "License": "Unspecified"
+        },
+        {
+            "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\DS1307RTC",
+            "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\DS1307RTC",
+            "UtilityFolder": "",
+            "Layout": 1,
+            "Name": "DS1307RTC",
+            "RealName": "DS1307RTC",
+            "IsLegacy": false,
+            "Version": "1.4",
+            "Author": "Michael Margolis",
+            "Maintainer": "Paul Stoffregen",
+            "Sentence": "Use a DS1307 Real Time Clock chip with the Time library",
+            "Paragraph": "-",
+            "URL": "http://playground.arduino.cc/code/time",
             "Category": "Timing",
+            "License": "Unspecified"
+        },
+        {
+            "Folder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\SoftwareSerial",
+            "SrcFolder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\SoftwareSerial\\src",
+            "UtilityFolder": "",
+            "Layout": 2,
+            "Name": "SoftwareSerial",
+            "RealName": "SoftwareSerial",
+            "IsLegacy": false,
+            "Version": "1.0",
+            "Author": "Arduino",
+            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
+            "Sentence": "Enables serial communication on any digital pin.",
+            "Paragraph": "The SoftwareSerial library has been developed to allow serial communication on any digital pin of the board, using software to replicate the functionality of the hardware UART. It is possible to have multiple software serial ports with speeds up to 115200 bps.",
+            "URL": "http://www.arduino.cc/en/Reference/SoftwareSerial",
+            "Category": "Communication",
             "License": "Unspecified"
         },
         {
@@ -1579,6 +1671,57 @@
             "License": "Unspecified"
         },
         {
+            "Folder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\Wire",
+            "SrcFolder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\Wire\\src",
+            "UtilityFolder": "",
+            "Layout": 2,
+            "Name": "Wire",
+            "RealName": "Wire",
+            "IsLegacy": false,
+            "Version": "1.0",
+            "Author": "Arduino",
+            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
+            "Sentence": "This library allows you to communicate with I2C and Two Wire Interface devices.",
+            "Paragraph": "It allows the communication with I2C devices like temperature sensors, realtime clocks and many others using SDA (Data Line) and SCL (Clock Line).",
+            "URL": "http://www.arduino.cc/en/Reference/Wire",
+            "Category": "Communication",
+            "License": "Unspecified"
+        },
+        {
+            "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Time",
+            "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Time",
+            "UtilityFolder": "",
+            "Layout": 1,
+            "Name": "Time",
+            "RealName": "Time",
+            "IsLegacy": false,
+            "Version": "1.5",
+            "Author": "Michael Margolis",
+            "Maintainer": "Paul Stoffregen",
+            "Sentence": "Timekeeping functionality for Arduino",
+            "Paragraph": "Date and Time functions, with provisions to synchronize to external time sources like GPS and NTP (Internet).  This library is often used together with TimeAlarms and DS1307RTC.",
+            "URL": "http://playground.arduino.cc/code/time",
+            "Category": "Timing",
+            "License": "Unspecified"
+        },
+        {
+            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\SD",
+            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\SD\\src",
+            "UtilityFolder": "",
+            "Layout": 2,
+            "Name": "SD",
+            "RealName": "SD",
+            "IsLegacy": false,
+            "Version": "1.2.3",
+            "Author": "Arduino, SparkFun",
+            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
+            "Sentence": "Enables reading and writing on SD cards.",
+            "Paragraph": "Once an SD memory card is connected to the SPI interface of the Arduino or Genuino board you can create files and read/write on them. You can also move through directories on the SD card.",
+            "URL": "http://www.arduino.cc/en/Reference/SD",
+            "Category": "Data Storage",
+            "License": "Unspecified"
+        },
+        {
             "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge",
             "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Bridge\\src",
             "UtilityFolder": "",
@@ -1593,6 +1736,91 @@
             "Paragraph": "The Bridge library feature: access to the shared storage, run and manage linux processes, open a remote console, access to the linux file system, including the SD card, enstablish http clients or servers.",
             "URL": "http://www.arduino.cc/en/Reference/YunBridgeLibrary",
             "Category": "Communication",
+            "License": "Unspecified"
+        },
+        {
+            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Ethernet",
+            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Ethernet\\src",
+            "UtilityFolder": "",
+            "Layout": 2,
+            "Name": "Ethernet",
+            "RealName": "Ethernet",
+            "IsLegacy": false,
+            "Version": "2.0.0",
+            "Author": "Various (see AUTHORS file for details)",
+            "Maintainer": "Paul Stoffregen \u003cpaul@pjrc.com\u003e, Arduino \u003cinfo@arduino.cc\u003e",
+            "Sentence": "Enables network connection (local and Internet) using the Arduino Ethernet Board or Shield.",
+            "Paragraph": "With this library you can use the Arduino Ethernet (shield or board) to connect to Internet. The library provides both Client and server functionalities. The library permits you to connect to a local network also with DHCP and to resolve DNS.",
+            "URL": "http://www.arduino.cc/en/Reference/Ethernet",
+            "Category": "Communication",
+            "License": "Unspecified"
+        },
+        {
+            "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\DS3231",
+            "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\DS3231",
+            "UtilityFolder": "",
+            "Layout": 1,
+            "Name": "DS3231",
+            "RealName": "DS3231",
+            "IsLegacy": false,
+            "Version": "1.0.2",
+            "Author": "Andrew Wickert \u003cawickert@umn.edu\u003e, Eric Ayars, Jean-Claude Wippler, Northern Widget LLC \u003cinfo@northernwidget.com\u003e",
+            "Maintainer": "Andrew Wickert \u003cawickert@umn.edu\u003e",
+            "Sentence": "Arduino library for the DS3231 real-time clock (RTC)",
+            "Paragraph": "Abstracts functionality for clock reading, clock setting, and alarms for the DS3231 high-precision real-time clock. This is a splice of Ayars' (http://hacks.ayars.org/2011/04/ds3231-real-time-clock.html) and Jeelabs/Ladyada's (https://github.com/adafruit/RTClib) libraries.",
+            "URL": "https://github.com/NorthernWidget/DS3231",
+            "Category": "Timing",
+            "License": "Unspecified"
+        },
+        {
+            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Keyboard",
+            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Keyboard\\src",
+            "UtilityFolder": "",
+            "Layout": 2,
+            "Name": "Keyboard",
+            "RealName": "Keyboard",
+            "IsLegacy": false,
+            "Version": "1.0.2",
+            "Author": "Arduino",
+            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
+            "Sentence": "Allows an Arduino/Genuino board with USB capabilites to act as a Keyboard.",
+            "Paragraph": "This library plugs on the HID library. It can be used with or without other HID-based libraries (Mouse, Gamepad etc)",
+            "URL": "http://www.arduino.cc/en/Reference/Keyboard",
+            "Category": "Device Control",
+            "License": "Unspecified"
+        },
+        {
+            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Mouse",
+            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Mouse\\src",
+            "UtilityFolder": "",
+            "Layout": 2,
+            "Name": "Mouse",
+            "RealName": "Mouse",
+            "IsLegacy": false,
+            "Version": "1.0.1",
+            "Author": "Arduino",
+            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
+            "Sentence": "Allows an Arduino/Genuino board with USB capabilites to act as a Mouse.",
+            "Paragraph": "This library plugs on the HID library. Can be used with or without other HID-based libraries (Keyboard, Gamepad etc)",
+            "URL": "http://www.arduino.cc/en/Reference/Mouse",
+            "Category": "Device Control",
+            "License": "Unspecified"
+        },
+        {
+            "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED-master",
+            "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED-master\\src",
+            "UtilityFolder": "",
+            "Layout": 2,
+            "Name": "iarduino_OLED-master",
+            "RealName": "iarduino OLED (работа с OLED дисплеями)",
+            "IsLegacy": false,
+            "Version": "1.0.2",
+            "Author": "iarduino \u003cshop@iarduino.ru\u003e",
+            "Maintainer": "Панькин Павел \u003cshop@iarduino.ru\u003e",
+            "Sentence": "Библиотека для работы с OLED дисплеями.",
+            "Paragraph": "Позволяет выводить текст, числа, изображения и графику на OLED дисплеи 128x64 по шине I2C. Есть возможность выбора адреса для работы с несколькими дисплеями. Для вывода только текста и чисел воспользуйтесь библиотекой iarduino OLED_txt.",
+            "URL": "http://iarduino.ru/file/340.html",
+            "Category": "Display",
             "License": "Unspecified"
         },
         {
@@ -1613,37 +1841,37 @@
             "License": "Unspecified"
         },
         {
-            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\GSM",
-            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src",
+            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control",
+            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src",
             "UtilityFolder": "",
             "Layout": 2,
-            "Name": "GSM",
-            "RealName": "GSM",
+            "Name": "Robot_Control",
+            "RealName": "Robot Control",
             "IsLegacy": false,
-            "Version": "1.0.6",
+            "Version": "1.0.4",
             "Author": "Arduino",
             "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Enables GSM/GRPS network connection using the Arduino GSM Shield.",
-            "Paragraph": "Use this library to make/receive voice calls, to send and receive SMS with the Quectel M10 GSM module.\u003c/br\u003eThis library also allows you to connect to internet through the GPRS networks. You can either use web Clients and Servers.\u003c/br\u003e",
-            "URL": "http://www.arduino.cc/en/Reference/GSM",
-            "Category": "Communication",
+            "Sentence": "Enables easy access to the controls of the Arduino Robot Control board. For Arduino Robot only.",
+            "Paragraph": "The Arduino robot is made by two independent boards. The Control Board is the top board of the Arduino Robot, with this library you can easily write sketches to control the robot.",
+            "URL": "http://www.arduino.cc/en/Reference/RobotLibrary",
+            "Category": "Device Control",
             "License": "Unspecified"
         },
         {
-            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Stepper",
-            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Stepper\\src",
+            "Folder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\HID",
+            "SrcFolder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\HID\\src",
             "UtilityFolder": "",
             "Layout": 2,
-            "Name": "Stepper",
-            "RealName": "Stepper",
+            "Name": "HID",
+            "RealName": "HID",
             "IsLegacy": false,
-            "Version": "1.1.3",
+            "Version": "1.0",
             "Author": "Arduino",
             "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Allows Arduino boards to control a variety of stepper motors.",
-            "Paragraph": "This library allows you to control unipolar or bipolar stepper motors. To use it you will need a stepper motor, and the appropriate hardware to control it.",
-            "URL": "http://www.arduino.cc/en/Reference/Stepper",
-            "Category": "Device Control",
+            "Sentence": "Module for PluggableUSB infrastructure. Exposes an API for devices like Keyboards, Mice and Gamepads.",
+            "Paragraph": "-",
+            "URL": "http://www.arduino.cc/en/Reference/HID",
+            "Category": "Communication",
             "License": "Unspecified"
         },
         {
@@ -1681,54 +1909,88 @@
             "License": "Unspecified"
         },
         {
-            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Servo",
-            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Servo\\src",
+            "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\OLED_SH1106",
+            "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\OLED_SH1106",
+            "UtilityFolder": "",
+            "Layout": 1,
+            "Name": "OLED_SH1106",
+            "RealName": "",
+            "IsLegacy": true,
+            "Version": "",
+            "Author": "",
+            "Maintainer": "",
+            "Sentence": "",
+            "Paragraph": "",
+            "URL": "",
+            "Category": "",
+            "License": ""
+        },
+        {
+            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Stepper",
+            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Stepper\\src",
             "UtilityFolder": "",
             "Layout": 2,
-            "Name": "Servo",
-            "RealName": "Servo",
+            "Name": "Stepper",
+            "RealName": "Stepper",
             "IsLegacy": false,
             "Version": "1.1.3",
-            "Author": "Michael Margolis, Arduino",
+            "Author": "Arduino",
             "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Allows Arduino/Genuino boards to control a variety of servo motors.",
-            "Paragraph": "This library can control a great number of servos.\u003cbr /\u003eIt makes careful use of timers: the library can control 12 servos using only 1 timer.\u003cbr /\u003eOn the Arduino Due you can control up to 60 servos.\u003cbr /\u003e",
-            "URL": "http://www.arduino.cc/en/Reference/Servo",
+            "Sentence": "Allows Arduino boards to control a variety of stepper motors.",
+            "Paragraph": "This library allows you to control unipolar or bipolar stepper motors. To use it you will need a stepper motor, and the appropriate hardware to control it.",
+            "URL": "http://www.arduino.cc/en/Reference/Stepper",
             "Category": "Device Control",
             "License": "Unspecified"
         },
         {
-            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Ethernet",
-            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Ethernet\\src",
+            "Folder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\SPI",
+            "SrcFolder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\SPI\\src",
             "UtilityFolder": "",
             "Layout": 2,
-            "Name": "Ethernet",
-            "RealName": "Ethernet",
+            "Name": "SPI",
+            "RealName": "SPI",
             "IsLegacy": false,
-            "Version": "2.0.0",
-            "Author": "Various (see AUTHORS file for details)",
-            "Maintainer": "Paul Stoffregen \u003cpaul@pjrc.com\u003e, Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Enables network connection (local and Internet) using the Arduino Ethernet Board or Shield.",
-            "Paragraph": "With this library you can use the Arduino Ethernet (shield or board) to connect to Internet. The library provides both Client and server functionalities. The library permits you to connect to a local network also with DHCP and to resolve DNS.",
-            "URL": "http://www.arduino.cc/en/Reference/Ethernet",
+            "Version": "1.0",
+            "Author": "Arduino",
+            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
+            "Sentence": "Enables the communication with devices that use the Serial Peripheral Interface (SPI) Bus.",
+            "Paragraph": "SPI is a synchronous serial data protocol used by microcontrollers for communicating with one or more peripheral devices quickly over short distances. It uses three lines common to all devices (MISO, MOSI and SCK) and one specific for each device.",
+            "URL": "http://www.arduino.cc/en/Reference/SPI",
             "Category": "Communication",
             "License": "Unspecified"
         },
         {
-            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\SD",
-            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\SD\\src",
+            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Temboo",
+            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Temboo\\src",
             "UtilityFolder": "",
             "Layout": 2,
-            "Name": "SD",
-            "RealName": "SD",
+            "Name": "Temboo",
+            "RealName": "Temboo",
             "IsLegacy": false,
-            "Version": "1.2.3",
-            "Author": "Arduino, SparkFun",
+            "Version": "1.2.1",
+            "Author": "Temboo",
+            "Maintainer": "Temboo \u003csupport@temboo.com\u003e",
+            "Sentence": "This library enables calls to Temboo, a platform that connects Arduino/Genuino boards to 100+ APIs, databases, code utilities and more.",
+            "Paragraph": "Use this library to connect your Arduino or Genuino board to Temboo, making it simple to interact with a vast array of web-based resources and services.",
+            "URL": "http://www.temboo.com/arduino",
+            "Category": "Communication",
+            "License": "Unspecified"
+        },
+        {
+            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Motor",
+            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Motor\\src",
+            "UtilityFolder": "",
+            "Layout": 2,
+            "Name": "Robot_Motor",
+            "RealName": "Robot Motor",
+            "IsLegacy": false,
+            "Version": "1.0.3",
+            "Author": "Arduino",
             "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Enables reading and writing on SD cards.",
-            "Paragraph": "Once an SD memory card is connected to the SPI interface of the Arduino or Genuino board you can create files and read/write on them. You can also move through directories on the SD card.",
-            "URL": "http://www.arduino.cc/en/Reference/SD",
-            "Category": "Data Storage",
+            "Sentence": "Enables easy access to the motors of the Arduino Robot Motor board. For Arduino Robot only.",
+            "Paragraph": "-",
+            "URL": "http://www.arduino.cc/en/Reference/RobotLibrary",
+            "Category": "Device Control",
             "License": "Unspecified"
         },
         {
@@ -1749,87 +2011,36 @@
             "License": "Unspecified"
         },
         {
-            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\WiFi",
-            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\WiFi\\src",
+            "Folder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\EEPROM",
+            "SrcFolder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\EEPROM\\src",
             "UtilityFolder": "",
             "Layout": 2,
-            "Name": "WiFi",
-            "RealName": "WiFi",
+            "Name": "EEPROM",
+            "RealName": "EEPROM",
             "IsLegacy": false,
-            "Version": "1.2.7",
-            "Author": "Arduino",
+            "Version": "2.0",
+            "Author": "Arduino, Christopher Andrews",
             "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Enables network connection (local and Internet) using the Arduino WiFi shield.",
-            "Paragraph": "With this library you can instantiate Servers, Clients and send/receive UDP packets through WiFi. The shield can connect either to open or encrypted networks (WEP, WPA). The IP address can be assigned statically or through a DHCP. The library can also manage DNS.",
-            "URL": "http://www.arduino.cc/en/Reference/WiFi",
-            "Category": "Communication",
+            "Sentence": "Enables reading and writing to the permanent board storage.",
+            "Paragraph": "This library allows to read and write data in a memory type, the EEPROM, that keeps its content also when the board is powered off. The amount of EEPROM available depends on the microcontroller type.",
+            "URL": "http://www.arduino.cc/en/Reference/EEPROM",
+            "Category": "Data Storage",
             "License": "Unspecified"
         },
         {
-            "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\OLED_SH1106",
-            "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\OLED_SH1106",
-            "UtilityFolder": "",
-            "Layout": 1,
-            "Name": "OLED_SH1106",
-            "RealName": "",
-            "IsLegacy": true,
-            "Version": "",
-            "Author": "",
-            "Maintainer": "",
-            "Sentence": "",
-            "Paragraph": "",
-            "URL": "",
-            "Category": "",
-            "License": ""
-        },
-        {
-            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Temboo",
-            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Temboo\\src",
+            "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED_txt-master",
+            "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED_txt-master\\src",
             "UtilityFolder": "",
             "Layout": 2,
-            "Name": "Temboo",
-            "RealName": "Temboo",
-            "IsLegacy": false,
-            "Version": "1.2.1",
-            "Author": "Temboo",
-            "Maintainer": "Temboo \u003csupport@temboo.com\u003e",
-            "Sentence": "This library enables calls to Temboo, a platform that connects Arduino/Genuino boards to 100+ APIs, databases, code utilities and more.",
-            "Paragraph": "Use this library to connect your Arduino or Genuino board to Temboo, making it simple to interact with a vast array of web-based resources and services.",
-            "URL": "http://www.temboo.com/arduino",
-            "Category": "Communication",
-            "License": "Unspecified"
-        },
-        {
-            "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Time",
-            "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\Time",
-            "UtilityFolder": "",
-            "Layout": 1,
-            "Name": "Time",
-            "RealName": "Time",
-            "IsLegacy": false,
-            "Version": "1.5",
-            "Author": "Michael Margolis",
-            "Maintainer": "Paul Stoffregen",
-            "Sentence": "Timekeeping functionality for Arduino",
-            "Paragraph": "Date and Time functions, with provisions to synchronize to external time sources like GPS and NTP (Internet).  This library is often used together with TimeAlarms and DS1307RTC.",
-            "URL": "http://playground.arduino.cc/code/time",
-            "Category": "Timing",
-            "License": "Unspecified"
-        },
-        {
-            "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED-master",
-            "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED-master\\src",
-            "UtilityFolder": "",
-            "Layout": 2,
-            "Name": "iarduino_OLED-master",
-            "RealName": "iarduino OLED (работа с OLED дисплеями)",
+            "Name": "iarduino_OLED_txt-master",
+            "RealName": "iarduino OLED txt (вывод текста и чисел на OLED дисплеи)",
             "IsLegacy": false,
             "Version": "1.0.2",
             "Author": "iarduino \u003cshop@iarduino.ru\u003e",
             "Maintainer": "Панькин Павел \u003cshop@iarduino.ru\u003e",
-            "Sentence": "Библиотека для работы с OLED дисплеями.",
-            "Paragraph": "Позволяет выводить текст, числа, изображения и графику на OLED дисплеи 128x64 по шине I2C. Есть возможность выбора адреса для работы с несколькими дисплеями. Для вывода только текста и чисел воспользуйтесь библиотекой iarduino OLED_txt.",
-            "URL": "http://iarduino.ru/file/340.html",
+            "Sentence": "Библиотека для вывода текста и чисел на OLED дисплеи.",
+            "Paragraph": "Позволяет выводить текст и числа на OLED дисплеи 128x64 по шине I2C. Есть возможность выбора адреса для работы с несколькими дисплеями. Для вывода графики воспользуйтесь библиотекой iarduino OLED.",
+            "URL": "http://iarduino.ru/file/341.html",
             "Category": "Display",
             "License": "Unspecified"
         },
@@ -1851,23 +2062,6 @@
             "License": "Unspecified"
         },
         {
-            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Keyboard",
-            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Keyboard\\src",
-            "UtilityFolder": "",
-            "Layout": 2,
-            "Name": "Keyboard",
-            "RealName": "Keyboard",
-            "IsLegacy": false,
-            "Version": "1.0.2",
-            "Author": "Arduino",
-            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Allows an Arduino/Genuino board with USB capabilites to act as a Keyboard.",
-            "Paragraph": "This library plugs on the HID library. It can be used with or without other HID-based libraries (Mouse, Gamepad etc)",
-            "URL": "http://www.arduino.cc/en/Reference/Keyboard",
-            "Category": "Device Control",
-            "License": "Unspecified"
-        },
-        {
             "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\GyverEncoder",
             "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\GyverEncoder",
             "UtilityFolder": "",
@@ -1885,206 +2079,19 @@
             "License": ""
         },
         {
-            "Folder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\SPI",
-            "SrcFolder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\SPI\\src",
+            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\GSM",
+            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\GSM\\src",
             "UtilityFolder": "",
             "Layout": 2,
-            "Name": "SPI",
-            "RealName": "SPI",
-            "IsLegacy": false,
-            "Version": "1.0",
-            "Author": "Arduino",
-            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Enables the communication with devices that use the Serial Peripheral Interface (SPI) Bus.",
-            "Paragraph": "SPI is a synchronous serial data protocol used by microcontrollers for communicating with one or more peripheral devices quickly over short distances. It uses three lines common to all devices (MISO, MOSI and SCK) and one specific for each device.",
-            "URL": "http://www.arduino.cc/en/Reference/SPI",
-            "Category": "Communication",
-            "License": "Unspecified"
-        },
-        {
-            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control",
-            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Control\\src",
-            "UtilityFolder": "",
-            "Layout": 2,
-            "Name": "Robot_Control",
-            "RealName": "Robot Control",
-            "IsLegacy": false,
-            "Version": "1.0.4",
-            "Author": "Arduino",
-            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Enables easy access to the controls of the Arduino Robot Control board. For Arduino Robot only.",
-            "Paragraph": "The Arduino robot is made by two independent boards. The Control Board is the top board of the Arduino Robot, with this library you can easily write sketches to control the robot.",
-            "URL": "http://www.arduino.cc/en/Reference/RobotLibrary",
-            "Category": "Device Control",
-            "License": "Unspecified"
-        },
-        {
-            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Motor",
-            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Robot_Motor\\src",
-            "UtilityFolder": "",
-            "Layout": 2,
-            "Name": "Robot_Motor",
-            "RealName": "Robot Motor",
-            "IsLegacy": false,
-            "Version": "1.0.3",
-            "Author": "Arduino",
-            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Enables easy access to the motors of the Arduino Robot Motor board. For Arduino Robot only.",
-            "Paragraph": "-",
-            "URL": "http://www.arduino.cc/en/Reference/RobotLibrary",
-            "Category": "Device Control",
-            "License": "Unspecified"
-        },
-        {
-            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\RobotIRremote",
-            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\RobotIRremote\\src",
-            "UtilityFolder": "",
-            "Layout": 2,
-            "Name": "RobotIRremote",
-            "RealName": "Robot IR Remote",
-            "IsLegacy": false,
-            "Version": "2.0.0",
-            "Author": "Arduino",
-            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Allows controlling the Arduino Robot via an IR remote control. For Arduino Robot only.",
-            "Paragraph": "-",
-            "URL": "https://github.com/arduino-libraries/RobotIRremote",
-            "Category": "Device Control",
-            "License": "Unspecified"
-        },
-        {
-            "Folder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\SoftwareSerial",
-            "SrcFolder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\SoftwareSerial\\src",
-            "UtilityFolder": "",
-            "Layout": 2,
-            "Name": "SoftwareSerial",
-            "RealName": "SoftwareSerial",
-            "IsLegacy": false,
-            "Version": "1.0",
-            "Author": "Arduino",
-            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Enables serial communication on any digital pin.",
-            "Paragraph": "The SoftwareSerial library has been developed to allow serial communication on any digital pin of the board, using software to replicate the functionality of the hardware UART. It is possible to have multiple software serial ports with speeds up to 115200 bps.",
-            "URL": "http://www.arduino.cc/en/Reference/SoftwareSerial",
-            "Category": "Communication",
-            "License": "Unspecified"
-        },
-        {
-            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\Mouse",
-            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\Mouse\\src",
-            "UtilityFolder": "",
-            "Layout": 2,
-            "Name": "Mouse",
-            "RealName": "Mouse",
-            "IsLegacy": false,
-            "Version": "1.0.1",
-            "Author": "Arduino",
-            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Allows an Arduino/Genuino board with USB capabilites to act as a Mouse.",
-            "Paragraph": "This library plugs on the HID library. Can be used with or without other HID-based libraries (Keyboard, Gamepad etc)",
-            "URL": "http://www.arduino.cc/en/Reference/Mouse",
-            "Category": "Device Control",
-            "License": "Unspecified"
-        },
-        {
-            "Folder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\Wire",
-            "SrcFolder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\Wire\\src",
-            "UtilityFolder": "",
-            "Layout": 2,
-            "Name": "Wire",
-            "RealName": "Wire",
-            "IsLegacy": false,
-            "Version": "1.0",
-            "Author": "Arduino",
-            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "This library allows you to communicate with I2C and Two Wire Interface devices.",
-            "Paragraph": "It allows the communication with I2C devices like temperature sensors, realtime clocks and many others using SDA (Data Line) and SCL (Clock Line).",
-            "URL": "http://www.arduino.cc/en/Reference/Wire",
-            "Category": "Communication",
-            "License": "Unspecified"
-        },
-        {
-            "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED_txt-master",
-            "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\iarduino_OLED_txt-master\\src",
-            "UtilityFolder": "",
-            "Layout": 2,
-            "Name": "iarduino_OLED_txt-master",
-            "RealName": "iarduino OLED txt (вывод текста и чисел на OLED дисплеи)",
-            "IsLegacy": false,
-            "Version": "1.0.2",
-            "Author": "iarduino \u003cshop@iarduino.ru\u003e",
-            "Maintainer": "Панькин Павел \u003cshop@iarduino.ru\u003e",
-            "Sentence": "Библиотека для вывода текста и чисел на OLED дисплеи.",
-            "Paragraph": "Позволяет выводить текст и числа на OLED дисплеи 128x64 по шине I2C. Есть возможность выбора адреса для работы с несколькими дисплеями. Для вывода графики воспользуйтесь библиотекой iarduino OLED.",
-            "URL": "http://iarduino.ru/file/341.html",
-            "Category": "Display",
-            "License": "Unspecified"
-        },
-        {
-            "Folder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\HID",
-            "SrcFolder": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\libraries\\HID\\src",
-            "UtilityFolder": "",
-            "Layout": 2,
-            "Name": "HID",
-            "RealName": "HID",
-            "IsLegacy": false,
-            "Version": "1.0",
-            "Author": "Arduino",
-            "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Module for PluggableUSB infrastructure. Exposes an API for devices like Keyboards, Mice and Gamepads.",
-            "Paragraph": "-",
-            "URL": "http://www.arduino.cc/en/Reference/HID",
-            "Category": "Communication",
-            "License": "Unspecified"
-        },
-        {
-            "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\DS1307RTC",
-            "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\DS1307RTC",
-            "UtilityFolder": "",
-            "Layout": 1,
-            "Name": "DS1307RTC",
-            "RealName": "DS1307RTC",
-            "IsLegacy": false,
-            "Version": "1.4",
-            "Author": "Michael Margolis",
-            "Maintainer": "Paul Stoffregen",
-            "Sentence": "Use a DS1307 Real Time Clock chip with the Time library",
-            "Paragraph": "-",
-            "URL": "http://playground.arduino.cc/code/time",
-            "Category": "Timing",
-            "License": "Unspecified"
-        },
-        {
-            "Folder": "C:\\Program Files (x86)\\Arduino\\libraries\\TFT",
-            "SrcFolder": "C:\\Program Files (x86)\\Arduino\\libraries\\TFT\\src",
-            "UtilityFolder": "",
-            "Layout": 2,
-            "Name": "TFT",
-            "RealName": "TFT",
+            "Name": "GSM",
+            "RealName": "GSM",
             "IsLegacy": false,
             "Version": "1.0.6",
-            "Author": "Arduino, Adafruit",
+            "Author": "Arduino",
             "Maintainer": "Arduino \u003cinfo@arduino.cc\u003e",
-            "Sentence": "Allows drawing text, images, and shapes on the Arduino TFT graphical display.",
-            "Paragraph": "This library is compatible with most of the TFT display based on the ST7735 chipset.",
-            "URL": "http://www.arduino.cc/en/Reference/TFTLibrary",
-            "Category": "Display",
-            "License": "Unspecified"
-        },
-        {
-            "Folder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\OneWire",
-            "SrcFolder": "C:\\Users\\Basay\\Documents\\Arduino\\Libraries\\OneWire",
-            "UtilityFolder": "",
-            "Layout": 1,
-            "Name": "OneWire",
-            "RealName": "OneWire",
-            "IsLegacy": false,
-            "Version": "2.3.4",
-            "Author": "Jim Studt, Tom Pollard, Robin James, Glenn Trewitt, Jason Dangel, Guillermo Lovato, Paul Stoffregen, Scott Roberts, Bertrik Sikken, Mark Tillotson, Ken Butcher, Roger Clark, Love Nystrom",
-            "Maintainer": "Paul Stoffregen",
-            "Sentence": "Access 1-wire temperature sensors, memory and other chips.",
-            "Paragraph": "-",
-            "URL": "http://www.pjrc.com/teensy/td_libs_OneWire.html",
+            "Sentence": "Enables GSM/GRPS network connection using the Arduino GSM Shield.",
+            "Paragraph": "Use this library to make/receive voice calls, to send and receive SMS with the Quectel M10 GSM module.\u003c/br\u003eThis library also allows you to connect to internet through the GPRS networks. You can either use web Clients and Servers.\u003c/br\u003e",
+            "URL": "http://www.arduino.cc/en/Reference/GSM",
             "Category": "Communication",
             "License": "Unspecified"
         }
@@ -2092,35 +2099,99 @@
     "LinkerCommandLine": "\"C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5/bin/avr-gcc\" -w -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections -mmcu=atmega328p  -o \"F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug/Gates.ino.elf\" {object_files} \"F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug/{archive_file}\" \"-LF:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug\" -lm",
     "BuildProperties": [
         {
-            "Key": "recipe.c.o.pattern",
-            "Value": "\"{compiler.path}{compiler.c.cmd}\" {compiler.c.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.c.extra_flags} {build.extra_flags} {includes} \"{source_file}\" -o \"{object_file}\""
+            "Key": "tools.arduino-preprocessor.pattern",
+            "Value": "\"{cmd.path}\" \"{source_file}\" \"{codecomplete}\" -- -std=gnu++11"
         },
         {
-            "Key": "tools.avrdude.program.pattern",
-            "Value": "\"{cmd.path}\" \"-C{config.path}\" {program.verbose} {program.verify} -p{build.mcu} -c{protocol} {program.extra_params} \"-Uflash:w:{build.path}/{build.project_name}.hex:i\""
+            "Key": "menu.cpu.atmega328.bootloader.high_fuses",
+            "Value": "0xDA"
         },
         {
-            "Key": "tools.ctags.path",
-            "Value": "{runtime.tools.ctags.path}"
+            "Key": "menu.cpu.atmega328.bootloader.file",
+            "Value": "optiboot/optiboot_atmega328.hex"
         },
         {
-            "Key": "tools.ctags.pattern",
-            "Value": "\"{cmd.path}\" -u --language-force=c++ -f - --c++-kinds=svpf --fields=KSTtzns --line-directives \"{source_file}\""
+            "Key": "build.project_name",
+            "Value": "Gates.ino"
+        },
+        {
+            "Key": "preproc.includes.flags",
+            "Value": "-w -x c++ -M -MG -MP"
+        },
+        {
+            "Key": "tools.avrdude.upload.network_pattern",
+            "Value": "\"{network_cmd}\" -address {serial.port} -port {upload.network.port} -sketch \"{build.path}/{build.project_name}.hex\" -upload {upload.network.endpoint_upload} -sync {upload.network.endpoint_sync} -reset {upload.network.endpoint_reset} -sync_exp {upload.network.sync_return}"
+        },
+        {
+            "Key": "tools.avrdude.erase.params.quiet",
+            "Value": "-q -q"
+        },
+        {
+            "Key": "compiler.warning_flags",
+            "Value": "-w"
+        },
+        {
+            "Key": "tools.avrdude.config.path",
+            "Value": "{path}/etc/avrdude.conf"
+        },
+        {
+            "Key": "runtime.tools.avr-gcc-5.4.0-atmel3.6.1-arduino2.path",
+            "Value": "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr"
+        },
+        {
+            "Key": "compiler.S.flags",
+            "Value": "-c -g -x assembler-with-cpp -flto -MMD"
+        },
+        {
+            "Key": "runtime.ide.version",
+            "Value": "10600"
+        },
+        {
+            "Key": "runtime.tools.ctags-5.8-arduino11.path",
+            "Value": "C:\\Program Files (x86)\\Arduino\\tools-builder\\ctags\\5.8-arduino11"
         },
         {
             "Key": "upload.protocol",
             "Value": "arduino"
         },
         {
-            "Key": "tools.avrdude.erase.pattern",
-            "Value": "\"{cmd.path}\" \"-C{config.path}\" {erase.verbose} -p{build.mcu} -c{protocol} {program.extra_params} -e -Ulock:w:{bootloader.unlock_bits}:m -Uefuse:w:{bootloader.extended_fuses}:m -Uhfuse:w:{bootloader.high_fuses}:m -Ulfuse:w:{bootloader.low_fuses}:m"
+            "Key": "compiler.c.flags",
+            "Value": "-c -g -Os {compiler.warning_flags} -std=gnu11 -ffunction-sections -fdata-sections -MMD -flto -fno-fat-lto-objects"
         },
         {
-            "Key": "tools.avrdude.upload.pattern",
-            "Value": "\"{cmd.path}\" \"-C{config.path}\" {upload.verbose} {upload.verify} -p{build.mcu} -c{upload.protocol} \"-P{serial.port}\" -b{upload.speed} -D \"-Uflash:w:{build.path}/{build.project_name}.hex:i\""
+            "Key": "runtime.ide.path",
+            "Value": "C:\\Program Files (x86)\\Sysprogs\\VisualGDB\\Arduino"
         },
         {
-            "Key": "runtime.tools.arduinoOTA-1.3.0.path",
+            "Key": "compiler.objcopy.cmd",
+            "Value": "avr-objcopy"
+        },
+        {
+            "Key": "compiler.S.extra_flags",
+            "Value": ""
+        },
+        {
+            "Key": "menu.cpu.atmega328old.upload.speed",
+            "Value": "57600"
+        },
+        {
+            "Key": "tools.avrdude.erase.params.verbose",
+            "Value": "-v"
+        },
+        {
+            "Key": "extra.time.local",
+            "Value": "1573405043"
+        },
+        {
+            "Key": "tools.avrdude.upload.params.verbose",
+            "Value": "-v"
+        },
+        {
+            "Key": "build.core",
+            "Value": "arduino"
+        },
+        {
+            "Key": "runtime.tools.arduinoOTA.path",
             "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\arduinoOTA\\1.3.0"
         },
         {
@@ -2128,219 +2199,283 @@
             "Value": ""
         },
         {
-            "Key": "recipe.objcopy.hex.pattern",
-            "Value": "\"{compiler.path}{compiler.elf2hex.cmd}\" {compiler.elf2hex.flags} {compiler.elf2hex.extra_flags} \"{build.path}/{build.project_name}.elf\" \"{build.path}/{build.project_name}.hex\""
-        },
-        {
-            "Key": "menu.cpu.atmega328.build.mcu",
-            "Value": "atmega328p"
-        },
-        {
-            "Key": "build.system.path",
-            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\system"
-        },
-        {
-            "Key": "compiler.c.elf.flags",
-            "Value": "{compiler.warning_flags} -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections"
-        },
-        {
-            "Key": "bootloader.high_fuses",
-            "Value": "0xDA"
-        },
-        {
-            "Key": "menu.cpu.atmega328old.bootloader.low_fuses",
-            "Value": "0xFF"
-        },
-        {
-            "Key": "recipe.size.regex.data",
-            "Value": "^(?:\\.data|\\.bss|\\.noinit)\\s+([0-9]+).*"
-        },
-        {
-            "Key": "software",
-            "Value": "ARDUINO"
-        },
-        {
-            "Key": "build.fqbn",
-            "Value": "arduino:avr:nano:cpu=atmega328"
-        },
-        {
-            "Key": "compiler.S.flags",
-            "Value": "-c -g -x assembler-with-cpp -flto -MMD"
-        },
-        {
-            "Key": "tools.avrdude.upload.verify",
-            "Value": ""
-        },
-        {
-            "Key": "menu.cpu.atmega168",
-            "Value": "ATmega168"
-        },
-        {
-            "Key": "tools.avrdude.upload.params.quiet",
-            "Value": "-q -q"
-        },
-        {
-            "Key": "build.core.path",
-            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino"
-        },
-        {
-            "Key": "compiler.objcopy.eep.flags",
-            "Value": "-O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0"
-        },
-        {
             "Key": "ide_version",
             "Value": "10600"
-        },
-        {
-            "Key": "tools.avrdude_remote.upload.pattern",
-            "Value": "/usr/bin/run-avrdude /tmp/sketch.hex {upload.verbose} -p{build.mcu}"
-        },
-        {
-            "Key": "extra.time.zone",
-            "Value": "10800"
-        },
-        {
-            "Key": "menu.cpu.atmega328old.bootloader.file",
-            "Value": "atmega/ATmegaBOOT_168_atmega328.hex"
-        },
-        {
-            "Key": "recipe.output.save_file",
-            "Value": "{build.project_name}.{build.variant}.hex"
-        },
-        {
-            "Key": "bootloader.low_fuses",
-            "Value": "0xFF"
-        },
-        {
-            "Key": "bootloader.file",
-            "Value": "optiboot/optiboot_atmega328.hex"
-        },
-        {
-            "Key": "tools.avrdude.cmd.path",
-            "Value": "{path}/bin/avrdude"
-        },
-        {
-            "Key": "tools.avrdude.bootloader.pattern",
-            "Value": "\"{cmd.path}\" \"-C{config.path}\" {bootloader.verbose} -p{build.mcu} -c{protocol} {program.extra_params} \"-Uflash:w:{runtime.platform.path}/bootloaders/{bootloader.file}:i\" -Ulock:w:{bootloader.lock_bits}:m"
-        },
-        {
-            "Key": "tools.avrdude.program.params.verbose",
-            "Value": "-v"
-        },
-        {
-            "Key": "recipe.cpp.o.pattern",
-            "Value": "\"{compiler.path}{compiler.cpp.cmd}\" {compiler.cpp.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} \"{source_file}\" -o \"{object_file}\""
-        },
-        {
-            "Key": "compiler.objcopy.eep.extra_flags",
-            "Value": ""
-        },
-        {
-            "Key": "compiler.cpp.flags",
-            "Value": "-c -g -Os {compiler.warning_flags} -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto"
-        },
-        {
-            "Key": "build.project_name",
-            "Value": "Gates.ino"
-        },
-        {
-            "Key": "upload.maximum_data_size",
-            "Value": "2048"
-        },
-        {
-            "Key": "runtime.hardware.path",
-            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr"
-        },
-        {
-            "Key": "runtime.tools.avrdude-6.3.0-arduino14.path",
-            "Value": "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr"
-        },
-        {
-            "Key": "recipe.size.regex",
-            "Value": "^(?:\\.text|\\.data|\\.bootloader)\\s+([0-9]+).*"
-        },
-        {
-            "Key": "recipe.size.regex.eeprom",
-            "Value": "^(?:\\.eeprom)\\s+([0-9]+).*"
-        },
-        {
-            "Key": "compiler.elf2hex.flags",
-            "Value": "-O ihex -R .eeprom"
-        },
-        {
-            "Key": "recipe.output.tmp_file",
-            "Value": "{build.project_name}.hex"
-        },
-        {
-            "Key": "extra.time.local",
-            "Value": "1573398937"
-        },
-        {
-            "Key": "build.arch",
-            "Value": "AVR"
-        },
-        {
-            "Key": "menu.cpu.atmega168.bootloader.high_fuses",
-            "Value": "0xdd"
         },
         {
             "Key": "version",
             "Value": "1.8.1"
         },
         {
-            "Key": "recipe.preproc.includes",
-            "Value": "\"{compiler.path}{compiler.cpp.cmd}\" {compiler.cpp.flags} {preproc.includes.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} \"{source_file}\""
+            "Key": "menu.cpu.atmega328.upload.speed",
+            "Value": "115200"
         },
         {
-            "Key": "compiler.warning_flags.none",
-            "Value": "-w"
+            "Key": "recipe.output.save_file",
+            "Value": "{build.project_name}.{build.variant}.hex"
         },
         {
-            "Key": "tools.arduino-preprocessor.path",
-            "Value": "{runtime.tools.arduino-preprocessor.path}"
-        },
-        {
-            "Key": "compiler.ar.flags",
-            "Value": "rcs"
-        },
-        {
-            "Key": "recipe.S.o.pattern",
-            "Value": "\"{compiler.path}{compiler.c.cmd}\" {compiler.S.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.S.extra_flags} {build.extra_flags} {includes} \"{source_file}\" -o \"{object_file}\""
+            "Key": "menu.cpu.atmega168.upload.maximum_size",
+            "Value": "14336"
         },
         {
             "Key": "tools.avrdude.bootloader.params.quiet",
             "Value": "-q -q"
         },
         {
-            "Key": "runtime.tools.arduinoOTA.path",
-            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\arduinoOTA\\1.3.0"
+            "Key": "build.fqbn",
+            "Value": "arduino:avr:nano:cpu=atmega328"
         },
         {
-            "Key": "build.path",
-            "Value": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug"
+            "Key": "build.variant.path",
+            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\variants\\eightanaloginputs"
         },
         {
-            "Key": "tools.avrdude.upload.params.verbose",
-            "Value": "-v"
+            "Key": "runtime.tools.avrdude-6.3.0-arduino17.path",
+            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avrdude\\6.3.0-arduino17"
         },
         {
-            "Key": "recipe.ar.pattern",
-            "Value": "\"{compiler.path}{compiler.ar.cmd}\" {compiler.ar.flags} {compiler.ar.extra_flags} \"{archive_file_path}\" \"{object_file}\""
+            "Key": "build.core.path",
+            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\cores\\arduino"
+        },
+        {
+            "Key": "archive_file_path",
+            "Value": "{build.path}/{archive_file}"
+        },
+        {
+            "Key": "tools.avrdude.erase.pattern",
+            "Value": "\"{cmd.path}\" \"-C{config.path}\" {erase.verbose} -p{build.mcu} -c{protocol} {program.extra_params} -e -Ulock:w:{bootloader.unlock_bits}:m -Uefuse:w:{bootloader.extended_fuses}:m -Uhfuse:w:{bootloader.high_fuses}:m -Ulfuse:w:{bootloader.low_fuses}:m"
+        },
+        {
+            "Key": "menu.cpu.atmega168.bootloader.file",
+            "Value": "atmega/ATmegaBOOT_168_diecimila.hex"
+        },
+        {
+            "Key": "tools.avrdude.path",
+            "Value": "{runtime.tools.avrdude.path}"
+        },
+        {
+            "Key": "recipe.preproc.includes",
+            "Value": "\"{compiler.path}{compiler.cpp.cmd}\" {compiler.cpp.flags} {preproc.includes.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} \"{source_file}\""
+        },
+        {
+            "Key": "build.usb_flags",
+            "Value": "-DUSB_VID={build.vid} -DUSB_PID={build.pid} '-DUSB_MANUFACTURER={build.usb_manufacturer}' '-DUSB_PRODUCT={build.usb_product}'"
+        },
+        {
+            "Key": "menu.cpu.atmega168.upload.speed",
+            "Value": "19200"
+        },
+        {
+            "Key": "compiler.warning_flags.default",
+            "Value": ""
+        },
+        {
+            "Key": "recipe.S.o.pattern",
+            "Value": "\"{compiler.path}{compiler.c.cmd}\" {compiler.S.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.S.extra_flags} {build.extra_flags} {includes} \"{source_file}\" -o \"{object_file}\""
+        },
+        {
+            "Key": "menu.cpu.atmega328old.upload.maximum_size",
+            "Value": "30720"
+        },
+        {
+            "Key": "build.source.path",
+            "Value": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\sketches"
+        },
+        {
+            "Key": "compiler.ar.extra_flags",
+            "Value": ""
+        },
+        {
+            "Key": "upload.maximum_size",
+            "Value": "30720"
+        },
+        {
+            "Key": "compiler.c.elf.cmd",
+            "Value": "avr-gcc"
+        },
+        {
+            "Key": "build.arch",
+            "Value": "AVR"
+        },
+        {
+            "Key": "runtime.tools.ctags.path",
+            "Value": "C:\\Program Files (x86)\\Arduino\\tools-builder\\ctags\\5.8-arduino11"
+        },
+        {
+            "Key": "tools.ctags.path",
+            "Value": "{runtime.tools.ctags.path}"
+        },
+        {
+            "Key": "menu.cpu.atmega328old.bootloader.extended_fuses",
+            "Value": "0xFD"
+        },
+        {
+            "Key": "menu.cpu.atmega328old.bootloader.low_fuses",
+            "Value": "0xFF"
+        },
+        {
+            "Key": "runtime.platform.path",
+            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1"
+        },
+        {
+            "Key": "runtime.tools.avr-gcc.path",
+            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5"
+        },
+        {
+            "Key": "tools.ctags.cmd.path",
+            "Value": "{path}/ctags"
+        },
+        {
+            "Key": "recipe.objcopy.hex.pattern",
+            "Value": "\"{compiler.path}{compiler.elf2hex.cmd}\" {compiler.elf2hex.flags} {compiler.elf2hex.extra_flags} \"{build.path}/{build.project_name}.elf\" \"{build.path}/{build.project_name}.hex\""
+        },
+        {
+            "Key": "compiler.c.cmd",
+            "Value": "avr-gcc"
+        },
+        {
+            "Key": "menu.cpu.atmega328.build.mcu",
+            "Value": "atmega328p"
         },
         {
             "Key": "menu.cpu.atmega328old",
             "Value": "ATmega328P (Old Bootloader)"
         },
         {
-            "Key": "menu.cpu.atmega328.upload.speed",
+            "Key": "recipe.cpp.o.pattern",
+            "Value": "\"{compiler.path}{compiler.cpp.cmd}\" {compiler.cpp.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} \"{source_file}\" -o \"{object_file}\""
+        },
+        {
+            "Key": "bootloader.tool",
+            "Value": "avrdude"
+        },
+        {
+            "Key": "compiler.cpp.flags",
+            "Value": "-c -g -Os {compiler.warning_flags} -std=gnu++11 -fpermissive -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -Wno-error=narrowing -MMD -flto"
+        },
+        {
+            "Key": "tools.avrdude.bootloader.params.verbose",
+            "Value": "-v"
+        },
+        {
+            "Key": "compiler.warning_flags.all",
+            "Value": "-Wall -Wextra"
+        },
+        {
+            "Key": "build.mcu",
+            "Value": "atmega328p"
+        },
+        {
+            "Key": "menu.cpu.atmega328.upload.maximum_size",
+            "Value": "30720"
+        },
+        {
+            "Key": "menu.cpu.atmega168.bootloader.high_fuses",
+            "Value": "0xdd"
+        },
+        {
+            "Key": "menu.cpu.atmega168.bootloader.low_fuses",
+            "Value": "0xff"
+        },
+        {
+            "Key": "compiler.ldflags",
+            "Value": ""
+        },
+        {
+            "Key": "bootloader.file",
+            "Value": "optiboot/optiboot_atmega328.hex"
+        },
+        {
+            "Key": "compiler.c.elf.flags",
+            "Value": "{compiler.warning_flags} -Os -g -flto -fuse-linker-plugin -Wl,--gc-sections"
+        },
+        {
+            "Key": "compiler.c.elf.extra_flags",
+            "Value": ""
+        },
+        {
+            "Key": "extra.time.dst",
+            "Value": "0"
+        },
+        {
+            "Key": "recipe.preproc.macros",
+            "Value": "\"{compiler.path}{compiler.cpp.cmd}\" {compiler.cpp.flags} {preproc.macros.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} \"{source_file}\" -o \"{preprocessed_file_path}\""
+        },
+        {
+            "Key": "recipe.size.regex.eeprom",
+            "Value": "^(?:\\.eeprom)\\s+([0-9]+).*"
+        },
+        {
+            "Key": "menu.cpu.atmega328",
+            "Value": "ATmega328P"
+        },
+        {
+            "Key": "compiler.ar.flags",
+            "Value": "rcs"
+        },
+        {
+            "Key": "runtime.hardware.path",
+            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr"
+        },
+        {
+            "Key": "runtime.os",
+            "Value": "windows"
+        },
+        {
+            "Key": "extra.time.utc",
+            "Value": "1573394243"
+        },
+        {
+            "Key": "bootloader.low_fuses",
+            "Value": "0xFF"
+        },
+        {
+            "Key": "compiler.elf2hex.cmd",
+            "Value": "avr-objcopy"
+        },
+        {
+            "Key": "bootloader.unlock_bits",
+            "Value": "0x3F"
+        },
+        {
+            "Key": "_id",
+            "Value": "nano"
+        },
+        {
+            "Key": "tools.arduino-preprocessor.cmd.path",
+            "Value": "{path}/arduino-preprocessor"
+        },
+        {
+            "Key": "runtime.tools.arduinoOTA-1.3.0.path",
+            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\arduinoOTA\\1.3.0"
+        },
+        {
+            "Key": "recipe.objcopy.eep.pattern",
+            "Value": "\"{compiler.path}{compiler.objcopy.cmd}\" {compiler.objcopy.eep.flags} {compiler.objcopy.eep.extra_flags} \"{build.path}/{build.project_name}.elf\" \"{build.path}/{build.project_name}.eep\""
+        },
+        {
+            "Key": "tools.avrdude.upload.pattern",
+            "Value": "\"{cmd.path}\" \"-C{config.path}\" {upload.verbose} {upload.verify} -p{build.mcu} -c{upload.protocol} \"-P{serial.port}\" -b{upload.speed} -D \"-Uflash:w:{build.path}/{build.project_name}.hex:i\""
+        },
+        {
+            "Key": "name",
+            "Value": "Arduino Nano"
+        },
+        {
+            "Key": "upload.speed",
             "Value": "115200"
         },
         {
-            "Key": "compiler.ar.cmd",
-            "Value": "avr-gcc-ar"
+            "Key": "software",
+            "Value": "ARDUINO"
         },
         {
-            "Key": "menu.cpu.atmega328old.upload.maximum_data_size",
+            "Key": "menu.cpu.atmega328old.build.mcu",
+            "Value": "atmega328p"
+        },
+        {
+            "Key": "menu.cpu.atmega328.upload.maximum_data_size",
             "Value": "2048"
         },
         {
@@ -2348,291 +2483,111 @@
             "Value": "AVR_NANO"
         },
         {
-            "Key": "compiler.elf2hex.extra_flags",
-            "Value": ""
-        },
-        {
-            "Key": "compiler.path",
-            "Value": "{runtime.tools.avr-gcc.path}/bin/"
-        },
-        {
-            "Key": "menu.cpu.atmega328.bootloader.extended_fuses",
-            "Value": "0xFD"
-        },
-        {
-            "Key": "_id",
-            "Value": "nano"
-        },
-        {
-            "Key": "compiler.c.elf.extra_flags",
-            "Value": ""
-        },
-        {
-            "Key": "runtime.tools.avr-gcc-5.4.0-atmel3.6.1-arduino2.path",
-            "Value": "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr"
-        },
-        {
-            "Key": "compiler.elf2hex.cmd",
-            "Value": "avr-objcopy"
-        },
-        {
-            "Key": "menu.cpu.atmega168.upload.maximum_data_size",
-            "Value": "1024"
-        },
-        {
             "Key": "runtime.tools.arduinoOTA-1.2.1.path",
             "Value": "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr"
-        },
-        {
-            "Key": "compiler.c.cmd",
-            "Value": "avr-gcc"
-        },
-        {
-            "Key": "name",
-            "Value": "Arduino Nano"
-        },
-        {
-            "Key": "tools.avrdude.program.params.quiet",
-            "Value": "-q -q"
-        },
-        {
-            "Key": "compiler.c.elf.cmd",
-            "Value": "avr-gcc"
-        },
-        {
-            "Key": "build.usb_manufacturer",
-            "Value": "\"Unknown\""
-        },
-        {
-            "Key": "tools.arduino-preprocessor.pattern",
-            "Value": "\"{cmd.path}\" \"{source_file}\" \"{codecomplete}\" -- -std=gnu++11"
-        },
-        {
-            "Key": "recipe.preproc.macros",
-            "Value": "\"{compiler.path}{compiler.cpp.cmd}\" {compiler.cpp.flags} {preproc.macros.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.cpp.extra_flags} {build.extra_flags} {includes} \"{source_file}\" -o \"{preprocessed_file_path}\""
-        },
-        {
-            "Key": "menu.cpu.atmega328old.upload.maximum_size",
-            "Value": "30720"
-        },
-        {
-            "Key": "menu.cpu.atmega168.build.mcu",
-            "Value": "atmega168"
-        },
-        {
-            "Key": "recipe.size.pattern",
-            "Value": "\"{compiler.path}{compiler.size.cmd}\" -A \"{build.path}/{build.project_name}.elf\""
-        },
-        {
-            "Key": "menu.cpu.atmega328.bootloader.high_fuses",
-            "Value": "0xDA"
-        },
-        {
-            "Key": "tools.avrdude.erase.params.verbose",
-            "Value": "-v"
-        },
-        {
-            "Key": "preproc.macros.flags",
-            "Value": "-w -x c++ -E -CC"
-        },
-        {
-            "Key": "menu.cpu.atmega168.bootloader.extended_fuses",
-            "Value": "0xF8"
-        },
-        {
-            "Key": "runtime.tools.avrdude.path",
-            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avrdude\\6.3.0-arduino17"
-        },
-        {
-            "Key": "build.variant.path",
-            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\variants\\eightanaloginputs"
-        },
-        {
-            "Key": "tools.avrdude.path",
-            "Value": "{runtime.tools.avrdude.path}"
-        },
-        {
-            "Key": "archive_file_path",
-            "Value": "{build.path}/{archive_file}"
-        },
-        {
-            "Key": "compiler.cpp.cmd",
-            "Value": "avr-g++"
-        },
-        {
-            "Key": "menu.cpu.atmega328.upload.maximum_data_size",
-            "Value": "2048"
-        },
-        {
-            "Key": "compiler.objcopy.cmd",
-            "Value": "avr-objcopy"
-        },
-        {
-            "Key": "tools.ctags.cmd.path",
-            "Value": "{path}/ctags"
-        },
-        {
-            "Key": "runtime.platform.path",
-            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1"
-        },
-        {
-            "Key": "compiler.ar.extra_flags",
-            "Value": ""
-        },
-        {
-            "Key": "bootloader.lock_bits",
-            "Value": "0x0F"
-        },
-        {
-            "Key": "tools.avrdude.config.path",
-            "Value": "{path}/etc/avrdude.conf"
-        },
-        {
-            "Key": "compiler.warning_flags.default",
-            "Value": ""
-        },
-        {
-            "Key": "menu.cpu.atmega328",
-            "Value": "ATmega328P"
-        },
-        {
-            "Key": "compiler.S.extra_flags",
-            "Value": ""
-        },
-        {
-            "Key": "runtime.tools.avrdude-6.3.0-arduino17.path",
-            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avrdude\\6.3.0-arduino17"
-        },
-        {
-            "Key": "menu.cpu.atmega328old.bootloader.extended_fuses",
-            "Value": "0xFD"
-        },
-        {
-            "Key": "compiler.size.cmd",
-            "Value": "avr-size"
-        },
-        {
-            "Key": "tools.avrdude.bootloader.params.verbose",
-            "Value": "-v"
-        },
-        {
-            "Key": "bootloader.extended_fuses",
-            "Value": "0xFD"
-        },
-        {
-            "Key": "runtime.tools.avr-gcc.path",
-            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5"
-        },
-        {
-            "Key": "tools.avrdude.program.verify",
-            "Value": ""
-        },
-        {
-            "Key": "tools.avrdude.upload.network_pattern",
-            "Value": "\"{network_cmd}\" -address {serial.port} -port {upload.network.port} -sketch \"{build.path}/{build.project_name}.hex\" -upload {upload.network.endpoint_upload} -sync {upload.network.endpoint_sync} -reset {upload.network.endpoint_reset} -sync_exp {upload.network.sync_return}"
-        },
-        {
-            "Key": "recipe.c.combine.pattern",
-            "Value": "\"{compiler.path}{compiler.c.elf.cmd}\" {compiler.c.elf.flags} -mmcu={build.mcu} {compiler.c.elf.extra_flags} -o \"{build.path}/{build.project_name}.elf\" {object_files} \"{build.path}/{archive_file}\" \"-L{build.path}\" -lm"
         },
         {
             "Key": "compiler.cpp.extra_flags",
             "Value": ""
         },
         {
-            "Key": "runtime.tools.arduino-preprocessor-0.1.5.path",
-            "Value": "C:\\Program Files (x86)\\Arduino\\tools-builder\\arduino-preprocessor\\0.1.5"
+            "Key": "build.path",
+            "Value": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\Output\\Arduino_Nano\\Debug"
         },
         {
-            "Key": "upload.tool",
-            "Value": "avrdude"
+            "Key": "compiler.elf2hex.extra_flags",
+            "Value": ""
         },
         {
-            "Key": "build.usb_flags",
-            "Value": "-DUSB_VID={build.vid} -DUSB_PID={build.pid} '-DUSB_MANUFACTURER={build.usb_manufacturer}' '-DUSB_PRODUCT={build.usb_product}'"
-        },
-        {
-            "Key": "menu.cpu.atmega328.bootloader.file",
-            "Value": "optiboot/optiboot_atmega328.hex"
-        },
-        {
-            "Key": "build.source.path",
-            "Value": "F:\\Basay\\Dropbox\\BSK\\Gates\\Arda\\GatesInStudio\\GatesInStudio\\sketches"
-        },
-        {
-            "Key": "extra.time.dst",
-            "Value": "0"
-        },
-        {
-            "Key": "bootloader.tool",
-            "Value": "avrdude"
-        },
-        {
-            "Key": "bootloader.unlock_bits",
-            "Value": "0x3F"
-        },
-        {
-            "Key": "menu.cpu.atmega168.bootloader.low_fuses",
-            "Value": "0xff"
-        },
-        {
-            "Key": "runtime.tools.arduino-preprocessor.path",
-            "Value": "C:\\Program Files (x86)\\Arduino\\tools-builder\\arduino-preprocessor\\0.1.5"
-        },
-        {
-            "Key": "compiler.warning_flags",
-            "Value": "-w"
-        },
-        {
-            "Key": "runtime.ide.path",
-            "Value": "C:\\Program Files (x86)\\Sysprogs\\VisualGDB\\Arduino"
-        },
-        {
-            "Key": "upload.speed",
-            "Value": "115200"
-        },
-        {
-            "Key": "build.f_cpu",
-            "Value": "16000000L"
-        },
-        {
-            "Key": "runtime.ide.version",
-            "Value": "10600"
-        },
-        {
-            "Key": "menu.cpu.atmega168.upload.maximum_size",
-            "Value": "14336"
-        },
-        {
-            "Key": "tools.avrdude.erase.params.quiet",
-            "Value": "-q -q"
-        },
-        {
-            "Key": "menu.cpu.atmega168.bootloader.file",
-            "Value": "atmega/ATmegaBOOT_168_diecimila.hex"
+            "Key": "menu.cpu.atmega328old.bootloader.high_fuses",
+            "Value": "0xDA"
         },
         {
             "Key": "menu.cpu.atmega328.bootloader.low_fuses",
             "Value": "0xFF"
         },
         {
+            "Key": "runtime.tools.avrdude-6.3.0-arduino14.path",
+            "Value": "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr"
+        },
+        {
+            "Key": "menu.cpu.atmega328old.upload.maximum_data_size",
+            "Value": "2048"
+        },
+        {
+            "Key": "runtime.tools.arduino-preprocessor-0.1.5.path",
+            "Value": "C:\\Program Files (x86)\\Arduino\\tools-builder\\arduino-preprocessor\\0.1.5"
+        },
+        {
+            "Key": "tools.avrdude_remote.upload.pattern",
+            "Value": "/usr/bin/run-avrdude /tmp/sketch.hex {upload.verbose} -p{build.mcu}"
+        },
+        {
+            "Key": "compiler.warning_flags.none",
+            "Value": "-w"
+        },
+        {
+            "Key": "bootloader.high_fuses",
+            "Value": "0xDA"
+        },
+        {
+            "Key": "recipe.c.o.pattern",
+            "Value": "\"{compiler.path}{compiler.c.cmd}\" {compiler.c.flags} -mmcu={build.mcu} -DF_CPU={build.f_cpu} -DARDUINO={runtime.ide.version} -DARDUINO_{build.board} -DARDUINO_ARCH_{build.arch} {compiler.c.extra_flags} {build.extra_flags} {includes} \"{source_file}\" -o \"{object_file}\""
+        },
+        {
+            "Key": "runtime.tools.arduino-preprocessor.path",
+            "Value": "C:\\Program Files (x86)\\Arduino\\tools-builder\\arduino-preprocessor\\0.1.5"
+        },
+        {
+            "Key": "menu.cpu.atmega328.bootloader.extended_fuses",
+            "Value": "0xFD"
+        },
+        {
+            "Key": "tools.avrdude.program.pattern",
+            "Value": "\"{cmd.path}\" \"-C{config.path}\" {program.verbose} {program.verify} -p{build.mcu} -c{protocol} {program.extra_params} \"-Uflash:w:{build.path}/{build.project_name}.hex:i\""
+        },
+        {
+            "Key": "recipe.size.pattern",
+            "Value": "\"{compiler.path}{compiler.size.cmd}\" -A \"{build.path}/{build.project_name}.elf\""
+        },
+        {
+            "Key": "tools.avrdude.bootloader.pattern",
+            "Value": "\"{cmd.path}\" \"-C{config.path}\" {bootloader.verbose} -p{build.mcu} -c{protocol} {program.extra_params} \"-Uflash:w:{runtime.platform.path}/bootloaders/{bootloader.file}:i\" -Ulock:w:{bootloader.lock_bits}:m"
+        },
+        {
             "Key": "runtime.tools.avr-gcc-7.3.0-atmel3.6.1-arduino5.path",
             "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino5"
         },
         {
-            "Key": "runtime.os",
-            "Value": "windows"
+            "Key": "menu.cpu.atmega168.bootloader.extended_fuses",
+            "Value": "0xF8"
         },
         {
-            "Key": "tools.arduino-preprocessor.cmd.path",
-            "Value": "{path}/arduino-preprocessor"
+            "Key": "menu.cpu.atmega328old.bootloader.file",
+            "Value": "atmega/ATmegaBOOT_168_atmega328.hex"
         },
         {
-            "Key": "menu.cpu.atmega168.upload.speed",
-            "Value": "19200"
+            "Key": "menu.cpu.atmega168.build.mcu",
+            "Value": "atmega168"
         },
         {
-            "Key": "compiler.ldflags",
+            "Key": "tools.avrdude.upload.verify",
+            "Value": ""
+        },
+        {
+            "Key": "recipe.size.regex",
+            "Value": "^(?:\\.text|\\.data|\\.bootloader)\\s+([0-9]+).*"
+        },
+        {
+            "Key": "tools.avrdude.program.params.quiet",
+            "Value": "-q -q"
+        },
+        {
+            "Key": "compiler.elf2hex.flags",
+            "Value": "-O ihex -R .eeprom"
+        },
+        {
+            "Key": "compiler.objcopy.eep.extra_flags",
             "Value": ""
         },
         {
@@ -2640,80 +2595,132 @@
             "Value": "-V"
         },
         {
-            "Key": "tools.avrdude.upload.params.noverify",
-            "Value": "-V"
-        },
-        {
             "Key": "build.variant",
             "Value": "eightanaloginputs"
         },
         {
-            "Key": "runtime.tools.ctags-5.8-arduino11.path",
-            "Value": "C:\\Program Files (x86)\\Arduino\\tools-builder\\ctags\\5.8-arduino11"
+            "Key": "menu.cpu.atmega168.upload.maximum_data_size",
+            "Value": "1024"
+        },
+        {
+            "Key": "upload.tool",
+            "Value": "avrdude"
+        },
+        {
+            "Key": "compiler.cpp.cmd",
+            "Value": "avr-g++"
+        },
+        {
+            "Key": "tools.avrdude.program.verify",
+            "Value": ""
+        },
+        {
+            "Key": "extra.time.zone",
+            "Value": "10800"
+        },
+        {
+            "Key": "compiler.path",
+            "Value": "{runtime.tools.avr-gcc.path}/bin/"
+        },
+        {
+            "Key": "menu.cpu.atmega168",
+            "Value": "ATmega168"
+        },
+        {
+            "Key": "tools.avrdude.upload.params.noverify",
+            "Value": "-V"
+        },
+        {
+            "Key": "compiler.size.cmd",
+            "Value": "avr-size"
+        },
+        {
+            "Key": "tools.arduino-preprocessor.path",
+            "Value": "{runtime.tools.arduino-preprocessor.path}"
+        },
+        {
+            "Key": "bootloader.lock_bits",
+            "Value": "0x0F"
+        },
+        {
+            "Key": "build.f_cpu",
+            "Value": "16000000L"
+        },
+        {
+            "Key": "tools.avrdude.program.params.verbose",
+            "Value": "-v"
+        },
+        {
+            "Key": "recipe.c.combine.pattern",
+            "Value": "\"{compiler.path}{compiler.c.elf.cmd}\" {compiler.c.elf.flags} -mmcu={build.mcu} {compiler.c.elf.extra_flags} -o \"{build.path}/{build.project_name}.elf\" {object_files} \"{build.path}/{archive_file}\" \"-L{build.path}\" -lm"
+        },
+        {
+            "Key": "upload.maximum_data_size",
+            "Value": "2048"
+        },
+        {
+            "Key": "compiler.warning_flags.more",
+            "Value": "-Wall"
+        },
+        {
+            "Key": "tools.avrdude.upload.params.quiet",
+            "Value": "-q -q"
+        },
+        {
+            "Key": "tools.ctags.pattern",
+            "Value": "\"{cmd.path}\" -u --language-force=c++ -f - --c++-kinds=svpf --fields=KSTtzns --line-directives \"{source_file}\""
+        },
+        {
+            "Key": "preproc.macros.flags",
+            "Value": "-w -x c++ -E -CC"
+        },
+        {
+            "Key": "compiler.ar.cmd",
+            "Value": "avr-gcc-ar"
+        },
+        {
+            "Key": "recipe.size.regex.data",
+            "Value": "^(?:\\.data|\\.bss|\\.noinit)\\s+([0-9]+).*"
+        },
+        {
+            "Key": "build.usb_manufacturer",
+            "Value": "\"Unknown\""
+        },
+        {
+            "Key": "tools.avrdude.cmd.path",
+            "Value": "{path}/bin/avrdude"
+        },
+        {
+            "Key": "recipe.output.tmp_file",
+            "Value": "{build.project_name}.hex"
+        },
+        {
+            "Key": "build.system.path",
+            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\hardware\\avr\\1.8.1\\system"
         },
         {
             "Key": "tools.avrdude.network_cmd",
             "Value": "{runtime.tools.arduinoOTA.path}/bin/arduinoOTA"
         },
         {
-            "Key": "build.mcu",
-            "Value": "atmega328p"
-        },
-        {
-            "Key": "recipe.objcopy.eep.pattern",
-            "Value": "\"{compiler.path}{compiler.objcopy.cmd}\" {compiler.objcopy.eep.flags} {compiler.objcopy.eep.extra_flags} \"{build.path}/{build.project_name}.elf\" \"{build.path}/{build.project_name}.eep\""
-        },
-        {
             "Key": "compiler.c.extra_flags",
             "Value": ""
         },
         {
-            "Key": "compiler.warning_flags.all",
-            "Value": "-Wall -Wextra"
+            "Key": "bootloader.extended_fuses",
+            "Value": "0xFD"
         },
         {
-            "Key": "upload.maximum_size",
-            "Value": "30720"
+            "Key": "compiler.objcopy.eep.flags",
+            "Value": "-O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0"
         },
         {
-            "Key": "menu.cpu.atmega328old.build.mcu",
-            "Value": "atmega328p"
+            "Key": "recipe.ar.pattern",
+            "Value": "\"{compiler.path}{compiler.ar.cmd}\" {compiler.ar.flags} {compiler.ar.extra_flags} \"{archive_file_path}\" \"{object_file}\""
         },
         {
-            "Key": "build.core",
-            "Value": "arduino"
-        },
-        {
-            "Key": "menu.cpu.atmega328old.upload.speed",
-            "Value": "57600"
-        },
-        {
-            "Key": "runtime.tools.ctags.path",
-            "Value": "C:\\Program Files (x86)\\Arduino\\tools-builder\\ctags\\5.8-arduino11"
-        },
-        {
-            "Key": "menu.cpu.atmega328.upload.maximum_size",
-            "Value": "30720"
-        },
-        {
-            "Key": "extra.time.utc",
-            "Value": "1573388137"
-        },
-        {
-            "Key": "menu.cpu.atmega328old.bootloader.high_fuses",
-            "Value": "0xDA"
-        },
-        {
-            "Key": "compiler.c.flags",
-            "Value": "-c -g -Os {compiler.warning_flags} -std=gnu11 -ffunction-sections -fdata-sections -MMD -flto -fno-fat-lto-objects"
-        },
-        {
-            "Key": "preproc.includes.flags",
-            "Value": "-w -x c++ -M -MG -MP"
-        },
-        {
-            "Key": "compiler.warning_flags.more",
-            "Value": "-Wall"
+            "Key": "runtime.tools.avrdude.path",
+            "Value": "C:\\Users\\Basay\\Documents\\ArduinoData\\packages\\arduino\\tools\\avrdude\\6.3.0-arduino17"
         }
     ]
 }

@@ -3,9 +3,8 @@
 #include <Arduino.h>
 
 #define SYSPROGS_ARDUINO_EXPAND_GENERATED_PROTOTYPES \
-	void Timer1DisEnable(byte ON1_OFF0, unsigned long PeriodMilis ); \
+	void Timer1DisEnable(byte ON1_OFF0, unsigned long PeriodMilis = 1000); \
 	void setup(); \
-	void RaspRej(); \
 	void int0(); \
 	void RassvetZakat(); \
 	void loop(); \
