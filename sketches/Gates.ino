@@ -2,7 +2,7 @@
 
 
 							/*digipin 1  */
-							/*digipin 2  */   
+#define OpenSignalPin 2		/*digipin 2  */   
 							/*digipin 3  */   
 							/*digipin 4  */   
 #define MosfetGatePin 5		/*digipin 5  */   
@@ -23,17 +23,18 @@
 							/*analogpin 6 */
 							/*analogpin 7 */
 
-enum Rejim {OFF, ON, UP, DOWN, SETUP_UP, SETUP_ON, SETUP_DOWN};
+enum Rejim {OFF, UP, ON, DOWN, SETUP_UP, SETUP_ON, SETUP_DOWN};
 
 volatile bool SetButtState = false;
+unsigned int CurPwmInSett = 0;
 volatile Rejim Rej = OFF;
-char buttonState = 0;
+//char buttonState = 0;
 int pwm=0;
 unsigned long VoshodMilisec=5000;
 int DaySec=2;
 unsigned long ZakatMilisec=5000;
 volatile unsigned long AntiDizTime=0;
-unsigned long PressedTime=0;
+//unsigned long PressedTime=0;
 
 
 
@@ -53,12 +54,14 @@ void Timer1DisEnable(byte ON1_OFF0, unsigned long PeriodMilis )
 //=====================================================================================================
 ISR(TIMER1_COMPA_vect)
 {
-    int razn=millis()-AntiDizTime;
-    AntiDizTime=millis();
-    Serial.print("_______________INTERRUPT   ");
-    Serial.println(razn);
+	analogWrite(MosfetGatePin, pwm);
+	
+	//int razn=millis()-AntiDizTime;
+    //AntiDizTime=millis();
+    //Serial.print("_______________INTERRUPT   ");
+    //Serial.println(razn);
     
-    digitalWrite(ledPin, !digitalRead(ledPin));
+    //digitalWrite(ledPin, !digitalRead(ledPin));
     
 }
 //=====================================================================================================
@@ -70,10 +73,9 @@ void setup() {
 	pinMode(ledPin, OUTPUT);
 	pinMode(MosfetGatePin, OUTPUT);
 	Serial.begin(9600);
-	attachInterrupt(0, int0, CHANGE);
+	attachInterrupt(0, int0, RISING);
 	Serial.println("STAAAAAAAAAAAAAAAAAAAAART");
-	
-   //Timer1DisEnable(1,40);
+    Timer1DisEnable(1,40);
 }
 //=====================================================================================================
 void RaspRej()
@@ -107,26 +109,12 @@ switch (Rej)
 //=====================================================================================================
 
 void int0(){
-	//Serial.println("preryvanie po knopke NAJATA __________________");
-
-	if(millis()-AntiDizTime>10) 
+	if(millis()-AntiDizTime>3000) // три секунды - чтоб только одно включение апа было
    {
-    if(digitalRead(SettButtPin)==HIGH){
-	    //Serial.println("хуй");
-		Serial.println("preryvanie po knopke NAJATA 3333");
-		PressedTime=millis();
-    }
-    else{
-	    if ((millis() - PressedTime) > 3000){
-		    Rej = SETUP_UP;
-		    RaspRej();
-		    Timer1DisEnable(1, 2000);
-	    }
-	    Serial.print("preryvanie po knopke otpuwena cherez ");
-		Serial.println((millis()-PressedTime)/1000);
-    }
+	   Rej = UP;
+	   Serial.println("preryvanie po signalu vorot");
+	   AntiDizTime = millis();
    }
-   AntiDizTime=millis();
 }
 
 //=====================================================================================================
@@ -175,6 +163,7 @@ void loop() {
 			if (!SetButTempState && (millis() - AntiDizTime) / 1000 > 2)//если кнопка была нажата дольше 5 секунд
 			{
 				Rej = SETUP_UP;
+				CurPwmInSett = 0;
 				VoshodMilisec = 0;
 				DaySec = 0;
 				ZakatMilisec = 0;
@@ -202,6 +191,7 @@ void loop() {
 			else
 			{
 				Rej = SETUP_DOWN;
+				CurPwmInSett = 65530;
 				DaySec = (millis() - ZakatMilisec) / 1000;
 				Serial.print("Vremya ON: ");
 				Serial.println(DaySec);
@@ -230,7 +220,65 @@ void loop() {
 		AntiDizTime = millis();
 	}// установки времени
 
-	
+	switch (Rej)
+	{
+	case OFF: 
+		pwm = 0;
+		break;	
+	case UP: 
+		if (millis() - AntiDizTime < VoshodMilisec ) {
+			pwm = map(millis() - AntiDizTime, 0, VoshodMilisec, 0, 255);
+			pwm = constrain(pwm, 0, 255);
+		}	
+		else{
+			Rej = ON;
+			AntiDizTime = millis();
+			RaspRej();
+		}
+		break;	
+	case ON: 
+		if ((millis() - AntiDizTime)/1000 < DaySec) {
+			pwm = 255;
+		}	
+		else {
+			Rej = DOWN;
+			AntiDizTime = millis();
+			RaspRej();
+		}
+		break;	
+	case DOWN: 
+		if (millis() - AntiDizTime < ZakatMilisec) {
+			pwm = map(millis() - AntiDizTime, 0, VoshodMilisec, 255, 0);
+			pwm = constrain(pwm, 0, 255);
+		}	
+		else {
+			Rej = OFF;
+			RaspRej();
+		}
+		break;	
+	case SETUP_UP: 
+		if (CurPwmInSett < 65530)
+		{
+			pwm = map(CurPwmInSett, 0, 65530, 0, 255);
+			pwm = constrain(pwm, 0, 255);
+			CurPwmInSett++;
+		}
+		else CurPwmInSett = 0;
+		break;	
+	case SETUP_ON: 
+		pwm = 255;
+		break;	
+	case SETUP_DOWN: 
+		if (CurPwmInSett >0 )
+		{
+			pwm = map(CurPwmInSett, 0, 65530, 0, 255);
+			pwm = constrain(pwm, 0, 255);
+			CurPwmInSett--;
+		}
+		else CurPwmInSett = 65530;
+
+		break;	
+	}
 
 }
 
