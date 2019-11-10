@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{803FD0C6-D64E-4E16-9DC3-1DAEC859A3D2}") = "GatesInStudio", "GatesInStudio.vgdbproj", "{054FB235-4D30-4BBC-B79F-128ED3765262}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Arduino_Nano = Debug|Arduino_Nano
+		Release|Arduino_Nano = Release|Arduino_Nano
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{054FB235-4D30-4BBC-B79F-128ED3765262}.Debug|Arduino_Nano.ActiveCfg = Debug|Arduino_Nano
+		{054FB235-4D30-4BBC-B79F-128ED3765262}.Debug|Arduino_Nano.Build.0 = Debug|Arduino_Nano
+		{054FB235-4D30-4BBC-B79F-128ED3765262}.Release|Arduino_Nano.ActiveCfg = Release|Arduino_Nano
+		{054FB235-4D30-4BBC-B79F-128ED3765262}.Release|Arduino_Nano.Build.0 = Release|Arduino_Nano
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F19AA23-2959-48F6-9EA0-09C4A71D7605}
+	EndGlobalSection
+EndGlobal
