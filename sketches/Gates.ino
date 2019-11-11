@@ -1,5 +1,19 @@
-//#include <avr/interrupt.h>
+#include <C:\Users\Basay\Documents\ArduinoData\packages\arduino\hardware\avr\1.8.1\libraries\EEPROM\src\EEPROM.h >
 
+
+//info : Sketch uses 6504 bytes(21 %) of program storage space.Maximum is 30720 bytes.
+//info : Global variables use 479 bytes(23 %) of dynamic memory, leaving 1569 bytes for local variables.Maximum is 2048 bytes.
+
+// нажать кнопку настройки и держать 10 сек
+// отпустить. Если начался периодический рассвет - значит, зашли в режим настройки
+// для установки времени рассвета - нажать и держать столько времени, сколько нужен рассвет
+// после отпускания - загорится постоянно - это режим макс свечения
+// нажать и держать столько, сколько нужно
+// после отпускания - начнётся периодический закат
+// нажать и держать закат
+// потом всё потухнет - значит, сохранилось.
+// нажать сброс и проверить.
+// если Led13 мигает - значит, ошибка чтения из еепром !(0 < время < 5_минут) при включении
 
 							/*digipin 1  */
 #define OpenSignalPin 2		/*digipin 2  */   
@@ -30,9 +44,14 @@ unsigned int CurPwmInSett = 0;
 volatile Rejim Rej = OFF;
 //char buttonState = 0;
 int pwm=0;
-unsigned long VoshodMilisec=5000;
-int DaySec=2;
-unsigned long ZakatMilisec=5000;
+struct Times
+{
+	unsigned long VoshodMilisec;
+	int DaySec;
+	unsigned long ZakatMilisec;
+} Periods;
+bool EEPROMreadEroor = false;
+byte EELed = 0; // для непостоянного горения, а мигания диода ошибки
 volatile unsigned long AntiDizTime=0;
 //unsigned long PressedTime=0;
 
@@ -54,15 +73,25 @@ void Timer1DisEnable(byte ON1_OFF0, unsigned long PeriodMilis )
 //=====================================================================================================
 ISR(TIMER1_COMPA_vect)
 {
-	analogWrite(MosfetGatePin, pwm);
-	
+	//if(Rej!=OFF)
+		analogWrite(MosfetGatePin, pwm);
+	//Serial.println(digitalRead(MosfetGatePin)) ;
+	if (EEPROMreadEroor)
+	{
+		if (EELed > 50) { 
+			digitalWrite(ledPin, !digitalRead(ledPin)); 
+			EELed = 0; 
+		}
+		else
+			EELed++;
+	}
 	//int razn=millis()-AntiDizTime;
     //AntiDizTime=millis();
     //Serial.print("_______________INTERRUPT   ");
     //Serial.println(razn);
     
     //digitalWrite(ledPin, !digitalRead(ledPin));
-    
+    //Periods.VoshodMilisec
 }
 //=====================================================================================================
 
@@ -74,8 +103,25 @@ void setup() {
 	pinMode(MosfetGatePin, OUTPUT);
 	Serial.begin(9600);
 	attachInterrupt(0, int0, RISING);
+	Periods.VoshodMilisec = 5000;
+	Periods.DaySec = 2;
+	Periods.ZakatMilisec = 10000;
+	
+	Times EepT;
+	EEPROM.get(10, EepT);
+	Serial.print("EEPROM.Rassvet: "); Serial.println(EepT.VoshodMilisec);
+	Serial.print("EEPROM.Day: "); Serial.println(EepT.DaySec);
+	Serial.print("EEPROM.Zakat: "); Serial.println(EepT.ZakatMilisec);
+	
+	if (EepT.VoshodMilisec > 0 && EepT.VoshodMilisec < 300000) Periods.VoshodMilisec = EepT.VoshodMilisec; else EEPROMreadEroor = true;
+	if (EepT.DaySec > 0 && EepT.DaySec < 300) Periods.DaySec = EepT.DaySec;	else EEPROMreadEroor = true; // 300000 = 5 минут
+	if (EepT.ZakatMilisec > 0 && EepT.ZakatMilisec < 300000) Periods.ZakatMilisec = EepT.ZakatMilisec; else EEPROMreadEroor = true;
+	
 	Serial.println("STAAAAAAAAAAAAAAAAAAAAART");
-    Timer1DisEnable(1,40);
+	Serial.print("Rassvet: ");	Serial.println(Periods.VoshodMilisec);
+	Serial.print("Day: ");	Serial.println(Periods.DaySec);
+	Serial.print("Zakat: ");	Serial.println(Periods.ZakatMilisec);
+    Timer1DisEnable(1,10);
 }
 //=====================================================================================================
 void RaspRej()
@@ -113,39 +159,12 @@ void int0(){
    {
 	   Rej = UP;
 	   Serial.println("preryvanie po signalu vorot");
+	   RaspRej();
 	   AntiDizTime = millis();
    }
 }
 
-//=====================================================================================================
 
-void RassvetZakat()
-{
-    unsigned long StartTime=millis();
-    unsigned long CurTime=0;
-    while(CurTime<VoshodMilisec)
-    {
-      pwm=map(CurTime,0,VoshodMilisec,0,255);
-      pwm=constrain(pwm,0,255);
-      analogWrite(MosfetGatePin, pwm);
-      Serial.println(pwm);
-      delay(10);
-      CurTime=millis()-StartTime;
-    }
-    analogWrite(MosfetGatePin, 255);
-    delay(DaySec*1000);
-    StartTime=millis();
-    CurTime=0;
-    while(CurTime<ZakatMilisec)
-    {
-      pwm=map(CurTime,0,VoshodMilisec,255,0);
-      pwm=constrain(pwm,0,255);
-      analogWrite(MosfetGatePin, pwm);
-      Serial.println(pwm);
-      delay(10);
-      CurTime=millis()-StartTime;
-    }
-}
 
 //=====================================================================================================
 
@@ -164,51 +183,53 @@ void loop() {
 			{
 				Rej = SETUP_UP;
 				CurPwmInSett = 0;
-				VoshodMilisec = 0;
-				DaySec = 0;
-				ZakatMilisec = 0;
+				Periods.VoshodMilisec = 0;
+				Periods.DaySec = 0;
+				Periods.ZakatMilisec = 0;
 			}
 			break;	
 		case SETUP_UP: 
 			if (SetButTempState)
 			{
-				VoshodMilisec = millis();
+				Periods.VoshodMilisec = millis();
 			}
 			else
 			{
 				Rej = SETUP_ON;
-				VoshodMilisec = millis() - VoshodMilisec;
+				Periods.VoshodMilisec = millis() - Periods.VoshodMilisec;
 				Serial.print("Vremya voshoda: ");
-				Serial.println(VoshodMilisec);
-				//ZakatMilisec = millis();
+				Serial.println(Periods.VoshodMilisec);
+				//Periods.ZakatMilisec = millis();
 			}
 			break;	
 		case SETUP_ON: 
 			if (SetButTempState)
 			{
-				ZakatMilisec = millis();
+				Periods.ZakatMilisec = millis();
 			}
 			else
 			{
 				Rej = SETUP_DOWN;
 				CurPwmInSett = 65530;
-				DaySec = (millis() - ZakatMilisec) / 1000;
+				Periods.DaySec = (millis() - Periods.ZakatMilisec) / 1000;
 				Serial.print("Vremya ON: ");
-				Serial.println(DaySec);
+				Serial.println(Periods.DaySec);
 			}
 			break;	
 		case SETUP_DOWN: 
 			if (SetButTempState)
 			{
-				ZakatMilisec = millis();
+				Periods.ZakatMilisec = millis();
 			}
 			else
 			{
 				Rej = OFF;
-				ZakatMilisec = millis() - ZakatMilisec;
+				Periods.ZakatMilisec = millis() - Periods.ZakatMilisec;
 				Serial.print("Vremya zakata: ");
-				Serial.println(ZakatMilisec);
-				Serial.println("============================");
+				Serial.println(Periods.ZakatMilisec);
+				EEPROM.put(10, Periods);
+				Serial.println(" =========SAVED===================");
+				
 			}
 			break;	
 		}
@@ -224,10 +245,11 @@ void loop() {
 	{
 	case OFF: 
 		pwm = 0;
+		//analogWrite(MosfetGatePin, 0);
 		break;	
 	case UP: 
-		if (millis() - AntiDizTime < VoshodMilisec ) {
-			pwm = map(millis() - AntiDizTime, 0, VoshodMilisec, 0, 255);
+		if (millis() - AntiDizTime < Periods.VoshodMilisec ) {
+			pwm = map(millis() - AntiDizTime, 0, Periods.VoshodMilisec, 0, 255);
 			pwm = constrain(pwm, 0, 255);
 		}	
 		else{
@@ -237,7 +259,7 @@ void loop() {
 		}
 		break;	
 	case ON: 
-		if ((millis() - AntiDizTime)/1000 < DaySec) {
+		if ((millis() - AntiDizTime)/1000 < Periods.DaySec) {
 			pwm = 255;
 		}	
 		else {
@@ -247,8 +269,8 @@ void loop() {
 		}
 		break;	
 	case DOWN: 
-		if (millis() - AntiDizTime < ZakatMilisec) {
-			pwm = map(millis() - AntiDizTime, 0, VoshodMilisec, 255, 0);
+		if (millis() - AntiDizTime < Periods.ZakatMilisec) {
+			pwm = map(millis() - AntiDizTime, 0, Periods.ZakatMilisec, 255, 0);
 			pwm = constrain(pwm, 0, 255);
 		}	
 		else {
@@ -281,5 +303,6 @@ void loop() {
 	}
 
 }
+
 
 //=====================================================================================================

@@ -7,6 +7,5 @@
 	void setup(); \
 	void RaspRej(); \
 	void int0(); \
-	void RassvetZakat(); \
 	void loop(); \
 
