@@ -13,7 +13,67 @@
 // нажать и держать закат
 // потом всё потухнет - значит, сохранилось.
 // нажать сброс и проверить.
-// если Led13 мигает - значит, ошибка чтения из еепром !(0 < время < 5_минут) при включении
+// если Led13 мигает - значит, ошибка чтения из еепром при старте арды. Должно быть: (0 < ВРЕМЯ < 5_минут) 
+
+
+
+/*
+ *
+ *
+ *http://192.168.1.5/rgb?param=_FFFF00
+ *
+ *
+// Create aREST instance
+aREST rest = aREST();
+// NeoPixel Init
+Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS,
+	PIN, 
+	NEO_GRB + NEO_KHZ800);
+void setup() {
+	Serial.begin(115200);
+
+	// Register RGB function
+	rest.function(&quot ; rgb&quot ; , setPixelColor);
+	Serial.println(&quot ; Try DHCP...&quot ;);
+	if (Ethernet.begin(macAdd) == 0) {
+		Serial.println(&quot ; DHCP FAIL...Static IP&quot ;);
+		Ethernet.begin(macAdd, ip, myDns, myGateway);
+	}
+
+	server.begin();
+	Serial.print(&quot ; server IP : &quot ;);
+	Serial.println(Ethernet.localIP());
+
+	pixels.begin();
+	Serial.println(&quot ; Setup complete.\n&quot ;);
+}
+
+void loop() {
+	// listen for incoming clients
+	EthernetClient client = server.available();
+	rest.handle(client);
+	wdt_reset();
+}
+
+int setPixelColor(String hexColor) {
+	hexColor = &quot; 0x&quot; + hexColor;
+	Serial.println(&quot ; Hex color &quot ; + hexColor);
+	long n = strtol(&amp ; hexColor[0], NULL, 16);
+	Serial.println(&quot ; N : &quot ; + String(n));
+	long r = n &gt; &gt; 16;
+	long g = n &gt; &gt; 8 &amp; 0xFF;
+	long b = n &amp; 0xFF;
+  
+	// set single pixel color
+	return 1;
+}*/
+
+
+
+
+
+
+
 
 							/*digipin 1  */
 #define OpenSignalPin 2		/*digipin 2  */   
@@ -54,8 +114,8 @@ bool EEPROMreadEroor = false;
 byte EELed = 0; // для непостоянного горения, а мигания диода ошибки
 volatile unsigned long AntiDizTime=0;
 //unsigned long PressedTime=0;
-
-
+byte FG[9]; // FromGod
+byte FGC;
 
 //=====================================================================================================
 void Timer1DisEnable(byte ON1_OFF0, unsigned long PeriodMilis )
@@ -96,12 +156,13 @@ ISR(TIMER1_COMPA_vect)
 //=====================================================================================================
 
 void setup() {
-    // put your setup code here, to run once:
+	// put your setup code here, to run once:
+	FGC = 0;
 	Rej=OFF;
 	pinMode(SettButtPin, INPUT);
 	pinMode(ledPin, OUTPUT);
 	pinMode(MosfetGatePin, OUTPUT);
-	Serial.begin(9600);
+	Serial.begin(115200);
 	attachInterrupt(0, int0, RISING);
 	Periods.VoshodMilisec = 5000;
 	Periods.DaySec = 2;
@@ -150,7 +211,6 @@ switch (Rej)
 		Serial.println("			Rejim: SETUP_ON");
 		break;	
 	}
-
 }
 //=====================================================================================================
 
@@ -169,6 +229,56 @@ void int0(){
 //=====================================================================================================
 
 void loop() {
+	int incomingByte;
+	if (Serial.available() > 0)
+	{
+		//если есть доступные данные
+		// считываем байт
+		incomingByte = Serial.read();
+		// отсылаем то, что получили
+		FG[FGC] = incomingByte;
+		FGC++;
+		Serial.println(incomingByte);
+	}
+	else
+	{
+		FGC = 0;
+		FG[0] = 0;
+		FG[1] = 0;
+		FG[2] = 0;
+		FG[3] = 0;
+		FG[4] = 0;
+		FG[5] = 0;
+		FG[6] = 0;
+		FG[7] = 0;
+		FG[8] = 0;
+	}
+
+	if (FGC == 9) // HUI345FCK //OPN либо 000...255 // H=72 _ U=85 _ I=73 _  F=70 C=67 K=75
+	{
+		Serial.print(FG[0]); Serial.print(" "); Serial.print(FG[1]); Serial.print(" "); Serial.print(FG[2]); Serial.print(" ");
+		Serial.print(FG[3]); Serial.print(" "); Serial.print(FG[4]); Serial.print(" "); Serial.print(FG[5]); Serial.print(" ");
+		Serial.print(FG[6]); Serial.print(" "); Serial.print(FG[7]); Serial.print(" "); Serial.print(FG[8]); Serial.print(" ");
+		Serial.println("FGC=8");
+		
+       // 72 85 73     79 80 78   70 67 75
+		
+		if (FG[0] == 72 && FG[1] ==85 && FG[2] ==73 && FG[6] ==70 &&FG[7] ==67 &&FG[8] == 75)
+		{
+			Serial.println("hui___fck");
+			// O=79 P=80 N=78 0=48 _ 9=57
+			if(FG[3] == 79 && FG[4] == 80 && FG[5] == 78)
+			{
+				Rej = UP;
+				Serial.println("Prishla komanda vskrytiya");
+				RaspRej();
+				
+			}
+			
+		}
+			
+		FGC = 0;
+	}
 	
 	bool SetButTempState = digitalRead(SettButtPin);
 	if (SetButTempState != SetButtState && millis() - AntiDizTime > 100) {          //устнановки времени

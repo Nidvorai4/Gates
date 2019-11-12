@@ -39,12 +39,20 @@
     <PostDebugActions />
     <DebugStopActions />
     <BreakMode>Default</BreakMode>
+    <CustomBreakCommand>
+      <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+      <RemoteHost>
+        <HostName>BuildMachine</HostName>
+        <Transport>BuiltinShortcut</Transport>
+      </RemoteHost>
+      <BackgroundMode xsi:nil="true" />
+    </CustomBreakCommand>
   </CustomDebug>
   <DeviceTerminalSettings>
     <Connection xsi:type="com.sysprogs.terminal.connection.serial">
-      <ComPortName>COM6</ComPortName>
+      <ComPortName>COM42</ComPortName>
       <AdvancedSettings>
-        <BaudRate>9600</BaudRate>
+        <BaudRate>115200</BaudRate>
         <DataBits>8</DataBits>
         <Parity>None</Parity>
         <StopBits>One</StopBits>
@@ -230,7 +238,7 @@
       </DebugSettingsOverride>
       <BuildSettingsExtension xsi:type="com.visualgdb.build.external.arduino.extension">
         <BoardID>arduino:avr:nano</BoardID>
-        <COMPort>COM6</COMPort>
+        <COMPort>COM42</COMPort>
         <Properties>
           <Entries>
             <KeyValue>
