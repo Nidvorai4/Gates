@@ -18,10 +18,19 @@
           <string>Gates.ino</string>
         </Files>
       </RootSketchFolder>
-      <OtherFiles />
+      <OtherFiles>
+        <string>sketches\ELClient.h</string>
+        <string>sketches\ELClientResponse.h</string>
+        <string>sketches\ELClientWebServer.h</string>
+        <string>sketches\FP.h</string>
+        <string>sketches\Pages.h</string>
+      </OtherFiles>
     </ProjectModeSettings>
   </Project>
   <Build xsi:type="com.visualgdb.build.external.arduino">
+    <AdditionalLibraryDirectories>
+      <string>$(ProjectDir)\ESP_tools</string>
+    </AdditionalLibraryDirectories>
     <IgnoreNormalLibraryDirectories>false</IgnoreNormalLibraryDirectories>
     <OutputSubdirectory>Output\$(PlatformName.defuse)\$(ConfigurationName.defuse)</OutputSubdirectory>
     <EnableVerboseBuild>false</EnableVerboseBuild>

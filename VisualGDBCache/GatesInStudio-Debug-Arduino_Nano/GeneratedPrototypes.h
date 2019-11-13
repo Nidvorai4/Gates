@@ -3,6 +3,15 @@
 #include <Arduino.h>
 
 #define SYSPROGS_ARDUINO_EXPAND_GENERATED_PROTOTYPES \
+	void resetCb(void); \
+	void ledLoop(); \
+	void ledAddLog(uint8_t msg); \
+	String ledHistoryToLog(); \
+	void ledButtonPressCb( char * button); \
+	void ledSetFieldCb(char * field); \
+	void ledRefreshCb(char * url); \
+	void ledLoadCb(char * url); \
+	void ledInit(); \
 	void Timer1DisEnable(byte ON1_OFF0, unsigned long PeriodMilis ); \
 	void setup(); \
 	void RaspRej(); \
