@@ -77,6 +77,7 @@
 						// adds a new log message
 						void ledAddLog(uint8_t msg)
 						{
+							Serial.println("fun ledAddLog");
 							// check if max log is reached
 							if(log_ptr >= MAX_LOGS)
 							  log_ptr = MAX_LOGS - 1;
@@ -96,6 +97,7 @@
 						// create log messages to string
 						String ledHistoryToLog()
 						{
+							Serial.println("fun ledHistTolog");
 							String str = "[";
 
 							for (uint8_t i = 0; i < log_ptr; i++)
@@ -143,6 +145,7 @@
 						// called at button pressing
 						void ledButtonPressCb( char * button)
 						{
+							Serial.println("fun ledButPressCb");
 							String btn = button;
 							if (btn == F("btn_on"))
 							{
@@ -174,6 +177,7 @@
 						// - if this method is slow, UART receive buffer may overrun
 						void ledSetFieldCb(char * field)
 						{
+							Serial.println("fun ledSetFieldCb");
 							String fld = field;
 							if (fld == F("frequency"))
 							{
@@ -215,6 +219,7 @@
 						// called at page refreshing
 						void ledRefreshCb(char * url)
 						{
+							Serial.println("fun Ledrefresh");
 							if (blinking)
 								webServer.setArgString(F("text"), F("LED is blinking"));
 							else
@@ -227,6 +232,7 @@
 						// called at page loading
 						void ledLoadCb(char * url)
 						{
+							Serial.println("fun ledLoadCb");
 							webServer.setArgInt(F("frequency"), blinking_frequency);
 
 							switch (blinking_duty)
@@ -248,6 +254,7 @@
 						// LED setup code
 						void ledInit()
 						{
+							Serial.println("fun Ledinit");
 							// set mode to output and turn LED off
 							pinMode(LED_PIN, OUTPUT);
 							digitalWrite(LED_PIN, false);
@@ -515,7 +522,7 @@ void loop() {
 	
 	
 	int incomingByte;
-	if (Serial.available() > 0)
+	/*if (Serial.available() > 0)
 	{
 		//если есть доступные данные
 		// считываем байт
@@ -523,7 +530,7 @@ void loop() {
 		// отсылаем то, что получили
 		FG[FGC] = incomingByte;
 		FGC++;
-		Serial.println(incomingByte);
+		//Serial.println(incomingByte);
 	}
 	else
 	{
@@ -538,7 +545,7 @@ void loop() {
 		FG[7] = 0;
 		FG[8] = 0;
 	}
-
+*/
 	if (FGC == 9) // HUI345FCK //OPN либо 000...255 // H=72 _ U=85 _ I=73 _  F=70 C=67 K=75
 	{
 		Serial.print(FG[0]); Serial.print(" "); Serial.print(FG[1]); Serial.print(" "); Serial.print(FG[2]); Serial.print(" ");
