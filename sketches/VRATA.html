@@ -1,0 +1,49 @@
+  <!-- EspLink will add header here 
+<html><head><title>esp-link</title><link rel=stylesheet href="/pure.css"><link rel=stylesheet href="/style.css"><meta name=viewport content="width=device-width, initial-scale=1"><script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=96034WpHcQR7tJcsTHEUpkOiVnk5diwJRItSxcIilFSc-Vhqu60JKIX2WP5LLaEw" charset="UTF-8"></script><script src="/ui.js"></script><script src="/userpage.js"></script></head><body><div id=layout>   <!-- EspLink will add header here -->  
+  
+  -->
+  
+  
+  
+  <!-- EspLink will add header here -->
+    
+  <div class="header">
+    <h1>Управление вратами</h1>
+  </div>
+<style>
+   .b1 {
+    background: navy; /* Синий цвет фона */ 
+    color: white; /* Белые буквы */ 
+    font-size: 20pt; /* Размер шрифта в пунктах */
+   }
+  </style>
+  
+  <div class="content">
+    <div class="pure-g"><div class="pure-u-1 pure-u-md-1-2">
+      <div class="card">
+        <!--<h1>Control</h1>-->
+        <button id="btn_on" type="button">Открыть ворота</button>
+        <button id="btn_off" class="b1" type="button">Start huinkin</button>
+        <button id="btn_open" type="button">Turn off</button>
+		<p id="text"/> <!--сюда сыпется ответ от ledRefreshCb-->
+		
+      </div>
+      <div class="card">
+        <form>
+          <!--<b>Duty:</b><br/>
+          <input type="radio" name="duty" value="25_75">25% on 75% off</input><br/>
+          <input type="radio" name="duty" value="50_50">50% on 50% off</input><br/>
+          <input type="radio" name="duty" value="75_25">75% on 25% off</input><br/> -->
+          <b>Frequency:</b><br/>
+			<input type="range" name="brightness"  min="0" max="255"><br/>
+          <input type="submit" value ="Установить яркость"> </input>
+        </form>
+      </div></div>
+      <div class="pure-u-1 pure-u-md-1-2">
+      <div class="card" style="min-height: 400px">
+        <h1>Logs</h1>
+        <ul id="led_history"/>
+      </div>      
+    </div></div>
+  </div>
+</body></html>

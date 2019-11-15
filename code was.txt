@@ -1,46 +1,4 @@
 #include <C:\Users\Basay\Documents\ArduinoData\packages\arduino\hardware\avr\1.8.1\libraries\EEPROM\src\EEPROM.h >
-/*digipin 1  */
-#define OpenSignalPin 2		/*digipin 2  */   
-							/*digipin 3  */   
-							/*digipin 4  */   
-#define MosfetGatePin 5		/*digipin 5  */   
-							/*digipin 6  */   
-#define SettButtPin 7		/*digipin 7  */   
-							/*digipin 8  */
-							/*digipin 9  */   
-							/*digipin 10 */   
-							/*digipin 11 */  
-							/*digipin 12 */  
-#define ledPin 13			/*digipin 13 */   
-							/*analogpin 0 */ 
-							/*analogpin 1 */
-							/*analogpin 2 */
-							/*analogpin 3 */
-							/*analogpin 4 */
-							/*analogpin 5 */
-							/*analogpin 6 */
-							/*analogpin 7 */
-
-enum Rejim { OFF, UP, ON, DOWN, SETUP_UP, SETUP_ON, SETUP_DOWN, ON_by_WiFi,OPENED_by_WiFi };
-
-volatile bool SetButtState = false;
-unsigned int CurPwmInSett = 0;
-volatile Rejim Rej = OFF;
-//char buttonState = 0;
-int pwm = 0;
-byte pwmWiFi = 255;
-struct Times
-{
-	unsigned long VoshodMilisec;
-	int DaySec;
-	unsigned long ZakatMilisec;
-} Periods;
-bool EEPROMreadEroor = false;
-byte EELed = 0;  // для непостоянного горения, а мигания диода ошибки
-volatile unsigned long AntiDizTime = 0;
-//unsigned long PressedTime=0;
-byte FG[9];  // FromGod
-byte FGC;
 
 
 
@@ -76,10 +34,6 @@ byte FGC;
 						}
 
 //=====================================================================================================
-String History = "";
-bool EnableHist = true;
-
-
 
 						// the PIN to flash
 						#define LED_PIN  13
@@ -122,23 +76,9 @@ bool EnableHist = true;
 								}
 						}
 //=====================================================================================================
-						
-//нажатие кнопки - ledButtPress ledRefrCB ledHisttolog
-//обновление страницы ledloadCb ledRefrCB ledHisttolog
-// первый вход на страницу ledloadCb ledRefrCB ledHisttolog
-// ОТПРАВИТЬ: ledSetFieldCb(duty) ledSetFieldCb(freq) ledRefrCb LedHisttolog
-//POST id=btn_on {"text":"LED is turned on","led_history":["274s: set freq to",...]} ledButtPress ledAddLog ledRefrCb ledHisttolog
-//GET id=btn_off то же, но OFF     ledButtPress ledAddLog ledRefrCb ledHisttolog
-
-
-
-
-// ledAddLog появляется не всегда
-
 						// adds a new log message
 						void ledAddLog(uint8_t msg)
 						{
-							History = History + "ledAddLog ";
 							//Serial.println("fun ledAddLog");
 							// check if max log is reached
 							if(log_ptr >= MAX_LOGS)
@@ -159,7 +99,6 @@ bool EnableHist = true;
 						// create log messages to string
 						String ledHistoryToLog()
 						{
-							History = History + "ledHistoryToLog ";
 							//Serial.println("fun ledHistTolog");
 							String str = "[";
 
@@ -208,32 +147,30 @@ bool EnableHist = true;
 						// called at button pressing
 						void ledButtonPressCb( char * button)
 						{
-							History = History + "ledButtonPress(" + button + ")  ";
+							
 							//Serial.println("fun ledButPressCb");
 							String btn = button;
 							if (btn == F("btn_on"))
 							{
-								Rej = ON_by_WiFi;
-								pwmWiFi = 100;
+								if (blinking || digitalRead(LED_PIN) == false)
+									ledAddLog(LOG_SET_LED_ON);
+								blinking = 0;
+								digitalWrite(LED_PIN, true);
 							}
 							else if (btn == F("btn_off"))
 							{
-								Rej = OFF;
+								if (blinking || digitalRead(LED_PIN) == true)
+									ledAddLog(LOG_SET_LED_OFF);
+								blinking = 0;
+								digitalWrite(LED_PIN, false);
 							}
-							else if (btn == F("btn_open"))
+							else if (btn == F("btn_blink"))
 							{
-								//TODO въебать сюда открытие через пин
-								Rej = OPENED_by_WiFi;
+								if (!blinking)
+									ledAddLog(LOG_SET_LED_BLINKING);
+								blinking = 1;
+								blinking_next_ts = millis() + blinking_phase;
 							}
-							else if (btn.length()==6 && btn.substring(0,3)=="dim")
-							{
-								pwmWiFi = map(btn.substring(3, 6).toInt() , 0, 255, 0, 255);
-								pwmWiFi = constrain(pwmWiFi, 0, 255);
-								History += " dim=";
-								History += pwmWiFi;
-								History += " ";
-							}
-							
 						}
 //=====================================================================================================
 						// setting the value of a field
@@ -243,76 +180,65 @@ bool EnableHist = true;
 						// - if this method is slow, UART receive buffer may overrun
 						void ledSetFieldCb(char * field)
 						{
-							History = History + "ledSetFieldCB(" + field + ", " ;
+							//Serial.println("fun ledSetFieldCb");
 							String fld = field;
-							if (fld == F("Brightness"))
+							if (fld == F("frequency"))
 							{
-								pwmWiFi = map(webServer.getArgInt() , 0, 255, 0, 255);
-								pwmWiFi = constrain(pwmWiFi, 0, 255);
-								History += String(pwmWiFi,DEC) + ") ";
+								int8_t oldf = blinking_frequency;
+								blinking_frequency = webServer.getArgInt();
+
+								blinking_period = 2000 / blinking_frequency;
+								blinking_phase = blinking_duty * blinking_period / 4;
+  
+								if (oldf != blinking_frequency)
+								{
+									ledAddLog(blinking_frequency);
+									if (blinking)
+										digitalWrite(LED_PIN, false);
+								}
+							}
+							else if (fld == F("duty"))
+							{
+								int8_t oldp = blinking_duty;
+								String arg = webServer.getArgString();
+
+								if (arg == F("25_75"))
+									blinking_duty = 1;
+								else if (arg == F("50_50"))
+									blinking_duty = 2;
+								else if (arg == F("75_25"))
+									blinking_duty = 3;
+
+								if (blinking)
+									digitalWrite(LED_PIN, false);
+
+								blinking_phase = blinking_duty * blinking_period / 4;
+
+								if (oldp != blinking_duty)
+									ledAddLog(LOG_DUTY_25_75 - 1 + blinking_duty);
 							}
 						}
 //=====================================================================================================
 						// called at page refreshing
 						void ledRefreshCb(char * url)
 						{
-							History = History + "ledRefreshCb ";
 							//Serial.println("fun Ledrefresh");
-							switch(Rej)
-							{
-							case OFF: 
-								webServer.setArgString(F("text"),  F("OFF") );
-								//Serial.println("			Rejim: OFF");
-								break;	
-							case ON: 
-								webServer.setArgString(F("text"), F("ON"));
-								//Serial.println("			Rejim: ON");
-								break;	
-							case UP: 
-								webServer.setArgString(F("text"), F("UP"));
-								//Serial.println("			Rejim: UP");
-								break;	
-							case DOWN: 
-								webServer.setArgString(F("text"), F("DOWN"));
-								//Serial.println("			Rejim: DOWN");
-								break;	
-							case SETUP_UP: 
-								webServer.setArgString(F("text"), F("SETUP_UP"));
-								//Serial.println("			Rejim: SETUP_UP");
-								break;	
-							case SETUP_DOWN: 
-								webServer.setArgString(F("text"), F("SETUP_DOWN"));
-								//Serial.println("			Rejim: SETUP_DOWN");
-								break;	
-							case SETUP_ON: 
-								webServer.setArgString(F("text"), F("SETUP_ON"));
-								//Serial.println("			Rejim: SETUP_ON");
-								break;	
-							case ON_by_WiFi: 
-								webServer.setArgString(F("text"), F("ON_by_WIFI"));
-								//Serial.println("			Rejim: ON_by_WiFi");
-								break;	
-							case OPENED_by_WiFi: 
-								webServer.setArgString(F("text"), F("OPN_by_WIFI"));
-								//Serial.println("			Rejim: ON_by_WiFi");
-								break;	
-							}
-							
-							
-							
+							if (blinking)
+								webServer.setArgString(F("text"), F("LED is blinking"));
+							else
+								webServer.setArgString(F("text"), digitalRead(LED_PIN) ? F("LED is turned on") : F("LED is turned off"));
 
-							//String log = ledHistoryToLog();
-							//webServer.setArgJson(F("led_history"), log.begin());
+							String log = ledHistoryToLog();
+							webServer.setArgJson(F("led_history"), log.begin());
 						}
 //=====================================================================================================
 						// called at page loading
 						void ledLoadCb(char * url)
 						{
-							History = History + "LedLoadCb ";
 							//Serial.println("fun ledLoadCb");
-							webServer.setArgInt(F("Brightness"), pwmWiFi);
+							webServer.setArgInt(F("frequency"), blinking_frequency);
 
-/*							switch (blinking_duty)
+							switch (blinking_duty)
 							{
 							case 1:
 								webServer.setArgString(F("duty"), F("25_75"));
@@ -324,7 +250,7 @@ bool EnableHist = true;
 								webServer.setArgString(F("duty"), F("75_25"));
 								break;
 							}
-*/  
+  
 							ledRefreshCb(url);
 						}
 //=====================================================================================================
@@ -421,6 +347,47 @@ int setPixelColor(String hexColor) {
 
 
 
+							/*digipin 1  */
+#define OpenSignalPin 2		/*digipin 2  */   
+							/*digipin 3  */   
+							/*digipin 4  */   
+#define MosfetGatePin 5		/*digipin 5  */   
+							/*digipin 6  */   
+#define SettButtPin 7		/*digipin 7  */   
+							/*digipin 8  */
+							/*digipin 9  */   
+							/*digipin 10 */   
+							/*digipin 11 */  
+							/*digipin 12 */  
+#define ledPin 13			/*digipin 13 */   
+							/*analogpin 0 */ 
+							/*analogpin 1 */
+							/*analogpin 2 */
+							/*analogpin 3 */
+							/*analogpin 4 */
+							/*analogpin 5 */
+							/*analogpin 6 */
+							/*analogpin 7 */
+
+enum Rejim {OFF, UP, ON, DOWN, SETUP_UP, SETUP_ON, SETUP_DOWN};
+
+volatile bool SetButtState = false;
+unsigned int CurPwmInSett = 0;
+volatile Rejim Rej = OFF;
+//char buttonState = 0;
+int pwm=0;
+struct Times
+{
+	unsigned long VoshodMilisec;
+	int DaySec;
+	unsigned long ZakatMilisec;
+} Periods;
+bool EEPROMreadEroor = false;
+byte EELed = 0; // для непостоянного горения, а мигания диода ошибки
+volatile unsigned long AntiDizTime=0;
+//unsigned long PressedTime=0;
+byte FG[9]; // FromGod
+byte FGC;
 
 //=====================================================================================================
 void Timer1DisEnable(byte ON1_OFF0, unsigned long PeriodMilis )
@@ -530,9 +497,6 @@ switch (Rej)
 	case SETUP_ON: 
 		Serial.println("			Rejim: SETUP_ON");
 		break;	
-	case ON_by_WiFi: 
-		Serial.println("			Rejim: ON_by_WiFi");
-		break;	
 	}
 }
 //=====================================================================================================
@@ -540,23 +504,9 @@ switch (Rej)
 void int0(){
 	if(millis()-AntiDizTime>2000) // три секунды - чтоб только одно включение апа было
    {
-	   if (EnableHist)
-	   {
-		   Serial.println(History);
-		   History = "";
-		/*   String S = "dim123";
-		   Serial.println(S.length());
-		   Serial.println(S.substring(0, 3)); //dim
-		   Serial.println(S.substring(0, 2)); //di
-		   Serial.println(S.substring(3, 6)); //123
-		   Serial.println(S.substring(3, 7)); //123 */
-	   }
-	   else
-	   {
-		   Rej = UP;
-		   Serial.println("preryvanie po signalu vorot");
-		   RaspRej();
-	    }
+	   Rej = UP;
+	   Serial.println("preryvanie po signalu vorot");
+	   RaspRej();
 	   AntiDizTime = millis();
    }
 }
@@ -755,10 +705,6 @@ void loop() {
 		else CurPwmInSett = 65530;
 
 		break;	
-	case ON_by_WiFi: 
-		pwm = pwmWiFi;
-		break;	
-		
 	}
 
 }
