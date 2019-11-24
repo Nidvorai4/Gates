@@ -2,11 +2,11 @@
 /*digipin 1  */
 #define OpenSignalPin 2		/*digipin 2  */   
 							/*digipin 3  */   
-							/*digipin 4  */   
-#define MosfetGatePin 5		/*digipin 5  */   
+#define SettButtPin 4		/*digipin 4  */   
+#define MosfetLentaPin 5	/*digipin 5  */   
 							/*digipin 6  */   
-#define SettButtPin 7		/*digipin 7  */   
-							/*digipin 8  */
+#define MosfetOPNpin 7		/*digipin 7  */   
+#define ResetEspPin 8		/*digipin 8  */
 							/*digipin 9  */   
 							/*digipin 10 */   
 							/*digipin 11 */  
@@ -50,6 +50,8 @@ byte FGC;
 						#include "ELClient.h"
 						#include "ELClientWebServer.h"
 						#include "Pages.h"
+						#include "ELClientRest.h"
+						String TimeServPath;
 
 						// Initialize a connection to esp-link using the normal hardware serial port
 						//
@@ -57,8 +59,37 @@ byte FGC;
 						// - packet logging is slow and UART receive buffer can overrun (HTML form submission)
 						ELClient esp(&Serial, &Serial);
 
+						// Initialize a REST client on the connection to esp-link
+						ELClientRest rest(&esp);
+
+						boolean wifiConnected = false;
+
 						// Initialize the Web-Server client
 						ELClientWebServer webServer(&esp);
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> REST
+							#define BUFLEN 266
+							// Callback made from esp-link to notify of wifi status changes
+							// Here we print something out and set a global flag
+							void wifiCb(void *response) {
+								ELClientResponse *res = (ELClientResponse*)response;
+								if (res->argc() == 1) {
+									uint8_t status;
+									res->popArg(&status, 1);
+
+									if (status == STATION_GOT_IP) {
+										Serial.println("WIFI CONNECTED");
+										wifiConnected = true;
+									}
+									else {
+										Serial.print("WIFI NOT READY: ");
+										Serial.println(status);
+										wifiConnected = false;
+									}
+								}
+							}
+//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< REST
+
+
 //=====================================================================================================
 						// Callback made form esp-link to notify that it has just come out of a reset. This means we
 						// need to initialize it!
@@ -71,7 +102,7 @@ byte FGC;
 								if(!ok) Serial.println("EL-Client sync failed!");
 							} while (!ok);
 							Serial.println("EL-Client synced!");
-  
+  //TODO сделать перезагрузку модуля с арды
 							webServer.setup();
 						}
 
@@ -214,7 +245,7 @@ bool EnableHist = true;
 							if (btn == F("btn_on"))
 							{
 								Rej = ON_by_WiFi;
-								pwmWiFi = 100;
+								pwmWiFi = 255;
 							}
 							else if (btn == F("btn_off"))
 							{
@@ -223,6 +254,9 @@ bool EnableHist = true;
 							else if (btn == F("btn_open"))
 							{
 								//TODO въебать сюда открытие через пин
+								digitalWrite(MosfetOPNpin, HIGH);
+								delay(1000);
+								digitalWrite(MosfetOPNpin, LOW);
 								Rej = OPENED_by_WiFi;
 							}
 							else if (btn.length()==6 && btn.substring(0,3)=="dim")
@@ -245,12 +279,18 @@ bool EnableHist = true;
 						{
 							History = History + "ledSetFieldCB(" + field + ", " ;
 							String fld = field;
-							if (fld == F("Brightness"))
+							if (fld == F("brightness"))
 							{
 								pwmWiFi = map(webServer.getArgInt() , 0, 255, 0, 255);
 								pwmWiFi = constrain(pwmWiFi, 0, 255);
 								History += String(pwmWiFi,DEC) + ") ";
 							}
+							if (fld == F("timeserver"))
+							{
+								TimeServPath = webServer.getArgString();
+								History += "TimeSRV=" +TimeServPath +")";
+							}
+							
 						}
 //=====================================================================================================
 						// called at page refreshing
@@ -310,7 +350,7 @@ bool EnableHist = true;
 						{
 							History = History + "LedLoadCb ";
 							//Serial.println("fun ledLoadCb");
-							webServer.setArgInt(F("Brightness"), pwmWiFi);
+							webServer.setArgInt(F("brightness"), pwmWiFi);
 
 /*							switch (blinking_duty)
 							{
@@ -336,7 +376,7 @@ bool EnableHist = true;
 							pinMode(LED_PIN, OUTPUT);
 							digitalWrite(LED_PIN, false);
   
-							URLHandler *ledHandler = webServer.createURLHandler(F("/LED.html.json"));
+							URLHandler *ledHandler = webServer.createURLHandler(F("/VRATA.html.json"));
 							ledHandler->buttonCb.attach(ledButtonPressCb); //удалил const в аргументе ledButtonPressCb
 							ledHandler->setFieldCb.attach(ledSetFieldCb); // то же
 							ledHandler->loadCb.attach(ledLoadCb);         // то же
@@ -439,7 +479,7 @@ void Timer1DisEnable(byte ON1_OFF0, unsigned long PeriodMilis )
 ISR(TIMER1_COMPA_vect)
 {
 	//if(Rej!=OFF)
-		analogWrite(MosfetGatePin, pwm);
+		analogWrite(MosfetLentaPin, pwm);
 	//Serial.println(digitalRead(MosfetGatePin)) ;
 	if (EEPROMreadEroor)
 	{
@@ -461,29 +501,52 @@ ISR(TIMER1_COMPA_vect)
 //=====================================================================================================
 
 void setup() {
+	pinMode(SettButtPin, INPUT);
+	pinMode(ledPin, OUTPUT);
+	pinMode(MosfetLentaPin, OUTPUT);
+	pinMode(MosfetOPNpin, OUTPUT);
+	pinMode(ResetEspPin, OUTPUT);
+	digitalWrite(MosfetOPNpin, LOW);
+	digitalWrite(MosfetLentaPin, LOW);
+	digitalWrite(ResetEspPin, HIGH);
+	EnableHist = false;
+//esp.
 	// put your setup code here, to run once:
 	Serial.begin(115200);	
     // ESP>>>>>>>>>>
-		Serial.println("pered esp.reset");
+		//Serial.println("pered esp.reset");
 		esp.resetCb = resetCb;
-		Serial.println("pered ledinit");
+		//Serial.println("pered ledinit");
 		ledInit();
-		
+		//esp.
+
 	
                               	//userInit();
 								//voltageInit();
-		Serial.println("pered resetCb");
+		//Serial.println("pered resetCb");
 		resetCb();
+		esp.resetCb = resetCb; // на всякий чл
+	//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> REST
+
+	esp.wifiCb.attach(wifiCb);   // wifi status change callback, optional (delete if not desired)
+	
+	// Set up the REST client to talk to www.timeapi.org, this doesn't connect to that server,
+	// it just sets-up stuff on the esp-link side
+	  int err = rest.begin("https://www.yandex.ru",443,false);
+	if (err != 0) {
+		Serial.print("REST begin failed: ");
+		Serial.println(err);
+		while (1) ;
+	}
+	//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< REST	
+
 	//ESP <<<<<<<<<<
 	
 
 	FGC = 0;
 	Rej=OFF;
-	pinMode(SettButtPin, INPUT);
-	pinMode(ledPin, OUTPUT);
-	pinMode(MosfetGatePin, OUTPUT);
 	
-	attachInterrupt(0, int0, RISING);
+	attachInterrupt(0, int0, FALLING);
 	Periods.VoshodMilisec = 5000;
 	Periods.DaySec = 2;
 	Periods.ZakatMilisec = 10000;
@@ -542,6 +605,8 @@ void int0(){
    {
 	   if (EnableHist)
 	   {
+   
+		   
 		   Serial.println(History);
 		   History = "";
 		/*   String S = "dim123";
@@ -568,14 +633,14 @@ void int0(){
 void loop() {
 	//>>>>>>ESP
 		esp.Process();
-		ledLoop();
+		//ledLoop();
 		
 	   //voltageLoop();
 	//<<<<<<ESP
 	
 	
-	int incomingByte;
-	/*if (Serial.available() > 0)
+	/*int incomingByte;
+	if (Serial.available() > 0)
 	{
 		//если есть доступные данные
 		// считываем байт
@@ -598,7 +663,7 @@ void loop() {
 		FG[7] = 0;
 		FG[8] = 0;
 	}
-*/
+
 	if (FGC == 9) // HUI345FCK //OPN либо 000...255 // H=72 _ U=85 _ I=73 _  F=70 C=67 K=75
 	{
 		Serial.print(FG[0]); Serial.print(" "); Serial.print(FG[1]); Serial.print(" "); Serial.print(FG[2]); Serial.print(" ");
@@ -624,7 +689,7 @@ void loop() {
 			
 		FGC = 0;
 	}
-	
+	*/
 	bool SetButTempState = digitalRead(SettButtPin);
 	if (SetButTempState != SetButtState && millis() - AntiDizTime > 100) {          //устнановки времени
 
@@ -636,6 +701,41 @@ void loop() {
 		case DOWN: 
 			if (!SetButTempState && (millis() - AntiDizTime) / 1000 > 2)//если кнопка была нажата дольше 5 секунд
 			{
+				/*// if we're connected make an HTTP request
+	//if(wifiConnected) {
+		// Request /utc/now from the previously set-up server
+		//www.yandex.ru/time/sync.json?geo=193
+				char buff[32];
+				sprintf(buff, "/time/sync.json");
+
+				//rest.get((const char*)buff,  0); //?geo=193");
+				
+				rest.get( "/time/sync.json",0);//?geo=193");
+				
+				
+				//https://www.yandex.ru/time/sync.json
+//TODO не хочет коннектиться к яндексу. сделать перебор портов проще или послать всё нахй 
+				char response[BUFLEN];
+				//rest.get( "/time/sync.json", response);//?geo=193");
+				memset(response, 0, BUFLEN);
+				uint16_t code = rest.waitResponse(response, BUFLEN,6000);
+				//uint16_t code = rest.getResponse(response, BUFLEN);
+
+				if (code == HTTP_STATUS_OK) {
+					Serial.println("ARDUINO: GET time successful:");
+					Serial.println(response);
+				}
+				else {
+					Serial.print("ARDUINO: GET failed: ");
+					Serial.println(code);
+					Serial.println(response);
+				}
+				//delay(1000);
+			//}
+		*/
+				
+				
+				
 				Rej = SETUP_UP;
 				CurPwmInSett = 0;
 				Periods.VoshodMilisec = 0;
@@ -688,7 +788,7 @@ void loop() {
 			}
 			break;	
 		}
-		RaspRej();
+		//RaspRej();
 		SetButtState = SetButTempState;
 //		Serial.print(SetButtState);
 //		Serial.print("   ->  ");
@@ -701,7 +801,8 @@ void loop() {
 	case OFF: 
 		pwm = 0;
 		//analogWrite(MosfetGatePin, 0);
-		break;	
+		break;
+	case OPENED_by_WiFi: 
 	case UP: 
 		if (millis() - AntiDizTime < Periods.VoshodMilisec ) {
 			pwm = map(millis() - AntiDizTime, 0, Periods.VoshodMilisec, 0, 255);

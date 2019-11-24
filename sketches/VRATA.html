@@ -8,7 +8,7 @@
   <!-- EspLink will add header here -->
     
   <div class="header">
-    <h1>Управление вратами</h1>
+    <h1>Управление вратами</h1> 
   </div>
 <style>
    .b1 {
@@ -22,9 +22,9 @@
     <div class="pure-g"><div class="pure-u-1 pure-u-md-1-2">
       <div class="card">
         <!--<h1>Control</h1>-->
-        <button id="btn_on" type="button">Открыть ворота</button>
-        <button id="btn_off" class="b1" type="button">Start huinkin</button>
-        <button id="btn_open" type="button">Turn off</button>
+        <button id="btn_on" type="button">Включить свет</button>
+        <button id="btn_off" class="b1" type="button">Выключить свет</button>
+		<button id="btn_open" type="button">Открыть врата</button>
 		<p id="text"/> <!--сюда сыпется ответ от ledRefreshCb-->
 		
       </div>
@@ -32,8 +32,8 @@
         <form>
           <!--<b>Duty:</b><br/>
           <input type="radio" name="duty" value="25_75">25% on 75% off</input><br/>
-          <input type="radio" name="duty" value="50_50">50% on 50% off</input><br/>
-          <input type="radio" name="duty" value="75_25">75% on 25% off</input><br/> -->
+          <input type="radio" name="duty" value="50_50">50% on 50% off</input><br/>-->
+          <input type="text" name="timeserver" value="75_205">f</input><br/> 
           <b>Frequency:</b><br/>
 			<input type="range" name="brightness"  min="0" max="255"><br/>
           <input type="submit" value ="Установить яркость"> </input>

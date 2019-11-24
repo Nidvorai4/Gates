@@ -3,6 +3,7 @@
 #include <Arduino.h>
 
 #define SYSPROGS_ARDUINO_EXPAND_GENERATED_PROTOTYPES \
+	void wifiCb(void *response); \
 	void resetCb(void); \
 	void ledLoop(); \
 	void ledAddLog(uint8_t msg); \

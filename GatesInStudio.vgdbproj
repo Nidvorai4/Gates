@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <VisualGDBProjectSettings2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <ConfigurationName>Debug</ConfigurationName>
+  <ConfigurationName>Release</ConfigurationName>
   <Project xsi:type="com.visualgdb.project.external.arduino">
     <CustomSourceDirectories>
       <Directories />
@@ -24,6 +24,7 @@
         <string>sketches\ELClientWebServer.h</string>
         <string>sketches\FP.h</string>
         <string>sketches\Pages.h</string>
+        <string>sketches\ELClientRest.h</string>
       </OtherFiles>
     </ProjectModeSettings>
   </Project>
@@ -59,7 +60,7 @@
   </CustomDebug>
   <DeviceTerminalSettings>
     <Connection xsi:type="com.sysprogs.terminal.connection.serial">
-      <ComPortName>COM42</ComPortName>
+      <ComPortName>COM6</ComPortName>
       <AdvancedSettings>
         <BaudRate>115200</BaudRate>
         <DataBits>8</DataBits>
